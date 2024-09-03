@@ -2695,11 +2695,11 @@ Tags: alternative energy, company, eco, eco-friendly, ecology, environment, natu
 <-- Solar Panel  Header  Menu Area Css-->
 ===================================================*/
 
-/* .solar-header-section {
+.solar-header-section {
   background: #ffffff;
   position: relative;
   z-index: 999;  
-} */
+}
 
 .solar-header-section::before {
   position: absolute;

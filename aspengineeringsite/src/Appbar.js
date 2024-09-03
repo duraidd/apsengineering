@@ -280,13 +280,13 @@ function Appheader(props) {
         }}
         
       >
-        <Toolbar className="solar-header-section">
+        <Toolbar className="solar-header-section" >
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            edge="start"
+            edge="end"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ ml: "auto",mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon style={{ color: "#FF2A53" }} />
           </IconButton>
@@ -297,8 +297,8 @@ function Appheader(props) {
           >
             APS Technologies pvt ltd
           </Typography> */}
-          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "block" }, color: "black", paddingTop: '8px', marginRight: '2px' ,cursor:'pointer' }}>
-            <img src={Logoimg} alt="logo" width={'250px'} height={'50px'} onClick={()=>navigate('/')} />
+          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "block" }, color: "black", paddingTop: '8px', marginRight: '2px' ,cursor:'pointer'  }}>
+            <img src={Logoimg} alt="logo"  onClick={()=>navigate('/')}  />
           </Box>
 
           <Box sx={{ display: { xs: "none", sm: "contents" } }} >
@@ -378,10 +378,11 @@ function Appheader(props) {
           </Box>
         </Toolbar>
       </AppBar>
-      <nav>
+      <nav>        
         <Drawer
           container={container}
           variant="temporary"
+          anchor="right"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
@@ -391,7 +392,7 @@ function Appheader(props) {
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
-              width: drawerWidth,
+              width: drawerWidth              
             },
           }}
         >

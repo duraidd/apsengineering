@@ -235,9 +235,9 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" >
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-box wow animate__backInLeft">
+                            <div class="service-box">
                                 <div class="service-thumb">
                                     <img src={require("../src/images/resource/service1.png")} alt="" />
                                     <div class="service-content">
@@ -247,14 +247,14 @@ function Home() {
                                         <div class="service-text">
                                             <h4><a href="service-details.html">Solar Panels Services</a></h4>
                                             <p>Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat</p>
-                                            <a href="service-details.html">Read More <i class="bi bi-arrow-up-right"></i></a>
+                                            <a href="service-details.html">Read More </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-box wow animate__backInDown">
+                            <div class="service-box">
                                 <div class="service-thumb">
                                     <img src={require("../src/images/resource/service2.png")} alt="" />
                                     <div class="service-content">
@@ -264,24 +264,24 @@ function Home() {
                                         <div class="service-text">
                                             <h4><a href="service-details.html">Roof Solar Panels</a></h4>
                                             <p>Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat</p>
-                                            <a href="service-details.html">Read More <i class="bi bi-arrow-up-right"></i></a>
+                                            <a href="service-details.html">Read More </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-box wow animate__backInRight">
+                            <div class="service-box">
                                 <div class="service-thumb">
                                     <img src={require("../src/images/resource/service3.png")} alt="" />
                                     <div class="service-content">
                                         <div class="service-icon-thumb">
                                             <img src={require("../src/images/resource/service-icon3.png")} alt="" />
                                         </div>
-                                        <div class="service-text">
+                                        <div class="service-text" >
                                             <h4><a href="service-details.html">Commercial Roofing</a></h4>
                                             <p>Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat</p>
-                                            <a href="service-details.html">Read More <i class="bi bi-arrow-up-right"></i></a>
+                                            <a href="service-details.html">Read More </a>
                                         </div>
                                     </div>
                                 </div>
@@ -321,17 +321,17 @@ function Home() {
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <div class="section-title">
-                                <div class="section-sub-title pricing wow animate__fadeInDown">
+                                <div class="section-sub-title pricing">
                                     <h4>Our Prlcing Table</h4>
                                 </div>
-                                <div class="section-main-title pricing wow animate__fadeInUp">
+                                <div class="section-main-title pricing">
                                     <h2>Want to Ask Something</h2>
                                     <h2>from Us?</h2>
                                 </div>
                             </div>
-                            <div class="tab_container">
-                                <div id="tab1" class="tab_content">
-                                    <ul class="accordion">
+                            <div class="tab_container"  >
+                                <div id="tab1" class="tab_content" >
+                                    <ul class="accordion" style={{paddingLeft:'0px'}} >
                                         <li>
                                             <a onClick={() => handleAccordionClick(0)} style={{backgroundColor: activeIndex === 0 ? "#E63A27":""}}  ><span> What warranties do I have for installation? </span></a>
                                             <p>The time it takes to repair a roof depends on the extent of the damage. For minor repairs, it might take an hour or two. For significant repairs, A or team might be at your home for half a day.</p>
@@ -414,7 +414,7 @@ function Home() {
 
             <div class="choose-us-section">               
                     <div class="row choose">
-                        <div class="col-lg-6 col-md-12" style={{padding:'80px',flexWrap:'wrap'}} >
+                        <div class="col-lg-6 col-md-12" style={{padding:'20px',flexWrap:'wrap'}} >
                             <div class="section-title"  >
                                 <div class="section-sub-title choose">
                                     <h4>Why Choose Us</h4>
@@ -427,15 +427,17 @@ function Home() {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                             </div>
                             <div class="choose-us-content" >
+                                <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',flexWrap:'wrap',gap:'20px'}} >
                                 <div class="choose-us-thumb">
                                     <img src={require("../src/images/resource/choose-thumb.png")} alt="" />
                                 </div>
                                 <div class="choose-us-list" >
-                                    <ul style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'flex-start',alignContent:'flex-start',gap:'30px'}} >
+                                    <ul style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'flex-start',alignContent:'flex-start',gap:'10px'}} >
                                         <li><i class="bi bi-check"></i> Best of Perfect Shine</li>
                                         <li><i class="bi bi-check"></i> Geeen Energy Green Natural</li>
                                         <li><i class="bi bi-check"></i> Solar Energy fou All The </li>
                                     </ul>
+                                </div>
                                 </div>
                                 <div style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'center',alignItems:'center',gap:'20px'}} >
                                     <div class="solar-btn choose">

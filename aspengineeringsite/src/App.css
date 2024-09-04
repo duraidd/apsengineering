@@ -1832,7 +1832,7 @@
       display: block !important;
   }
   .slider-content {
-      padding: 110px 0 0;
+      padding: 2px 0 0;
   }
   .slider-content h4 {
       font-size: 21px;
@@ -1971,7 +1971,7 @@
   }
   /* pricing section */
   .pricing-section {
-      padding: 58px 0 18px;
+      padding: 58px 0 2px;
   }
   .section-main-title.pricing h2 {
       line-height: 30px;

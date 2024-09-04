@@ -244,9 +244,9 @@ function Home() {
                                         <div class="service-icon-thumb">
                                             <img src={require("../src/images/resource/service-icon1.png")} alt="" />
                                         </div>
-                                        <div class="service-text">
+                                        <div class="service-text" >
                                             <h4><a href="service-details.html">Solar Panels Services</a></h4>
-                                            <p>Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat</p>
+                                            <p>Suspendisse natoque elit in eget orci amet  volutpat, est. Integer mauris feugiat</p>
                                             <a href="service-details.html">Read More </a>
                                         </div>
                                     </div>

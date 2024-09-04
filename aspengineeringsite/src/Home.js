@@ -97,10 +97,10 @@ function Home() {
                                     <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
                                     <div style={{ display: 'flex', flexDirection: 'row' }} >
                                         <div class="solar-btn slider1 wow slideInLeft">
-                                            <a href="service-details.html">Our Service</a>
+                                            <a>Our Service</a>
                                         </div>
                                         <div class="solar-btn slider2  wow slideRight">
-                                            <a href="about-us.html">More About!</a>
+                                            <a>More About!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -119,10 +119,10 @@ function Home() {
                                     <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
                                     <div style={{ display: 'flex', flexDirection: 'row' }} >
                                         <div class="solar-btn slider1">
-                                            <a href="service-details.html">Our Service </a>
+                                            <a>Our Service </a>
                                         </div>
                                         <div class="solar-btn slider2">
-                                            <a href="about-us.html">More About! </a>
+                                            <a>More About! </a>
                                         </div>
                                     </div>
                                 </div>
@@ -174,9 +174,9 @@ function Home() {
                             </div>
                             <div class="tab">
                                 <ul class="tabs active wow slideInRight">
-                                    <li class="current"><a href="#">About Us <i class="bi bi-arrow-up-right"></i></a></li>
-                                    <li class=""><a href="#">Mission <i class="bi bi-arrow-up-right"></i></a></li>
-                                    <li class=""><a href="#">Visiont <i class="bi bi-arrow-up-right"></i></a></li>
+                                    <li class="current"><a>About Us <i class="bi bi-arrow-up-right"></i></a></li>
+                                    <li class=""><a>Mission <i class="bi bi-arrow-up-right"></i></a></li>
+                                    <li class=""><a>Visiont <i class="bi bi-arrow-up-right"></i></a></li>
                                 </ul>
 
                                 <div class="tab_content">
@@ -206,7 +206,7 @@ function Home() {
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="solar-btn about">
-                                                        <a href="#">Our Service</a>
+                                                        <a>Our Service</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -245,9 +245,9 @@ function Home() {
                                             <img src={require("../src/images/resource/service-icon1.png")} alt="" />
                                         </div>
                                         <div class="service-text" >
-                                            <h4><a href="service-details.html">Solar Panels Services</a></h4>
+                                            <h4><a>Solar Panels Services</a></h4>
                                             <p>Suspendisse natoque elit in eget orci amet  volutpat, est. Integer mauris feugiat</p>
-                                            <a href="service-details.html">Read More </a>
+                                            <a>Read More </a>
                                         </div>
                                     </div>
                                 </div>
@@ -262,9 +262,9 @@ function Home() {
                                             <img src={require("../src/images/resource/service-icon2.png")} alt="" />
                                         </div>
                                         <div class="service-text">
-                                            <h4><a href="service-details.html">Roof Solar Panels</a></h4>
+                                            <h4><a>Roof Solar Panels</a></h4>
                                             <p>Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat</p>
-                                            <a href="service-details.html">Read More </a>
+                                            <a>Read More </a>
                                         </div>
                                     </div>
                                 </div>
@@ -279,9 +279,9 @@ function Home() {
                                             <img src={require("../src/images/resource/service-icon3.png")} alt="" />
                                         </div>
                                         <div class="service-text" >
-                                            <h4><a href="service-details.html">Commercial Roofing</a></h4>
+                                            <h4><a>Commercial Roofing</a></h4>
                                             <p>Suspendisse natoque elit in eget orci amet volutpat, est. Integer mauris feugiat</p>
-                                            <a href="service-details.html">Read More </a>
+                                            <a>Read More </a>
                                         </div>
                                     </div>
                                 </div>
@@ -307,8 +307,8 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="solar-btn contact-us wow animate__fadeInRight">
-                            <a href="contact-us.html">Contact Now <i class="bi bi-arrow-right"></i></a>
+                        <div class="solar-btn contact-us" style={{marginRight:'50px'}} >
+                            <a>Contact Now</a>
                         </div>
                     </div>
                 </div>
@@ -404,7 +404,7 @@ function Home() {
                         <div class="col-lg-12">
                             <div class="single-video text-center wow animate__bounceInDown">
                                 <div class="video-icon">
-                                    <a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://youtu.be/BS4TUd7FJSg"><i class="bi bi-play"></i></a>
+                                    <a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" ><i class="rotated">▶</i></a>
                                 </div>
                             </div>
                         </div>
@@ -441,7 +441,7 @@ function Home() {
                                 </div>
                                 <div style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'center',alignItems:'center',gap:'20px'}} >
                                     <div class="solar-btn choose">
-                                        <a href="#">Get A Quote <i class="bi bi-arrow-right"></i></a>
+                                        <a>Get A Quote <i class="bi bi-arrow-right"></i></a>
                                     </div>
                                     <div class="choose-us-icon">
                                         <i>✔</i>

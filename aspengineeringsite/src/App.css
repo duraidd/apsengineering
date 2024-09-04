@@ -4076,6 +4076,7 @@ a.active {
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-blue 1s linear infinite;
   -webkit-transition: .5s;
+  transform: rotateX(-54deg);
 }
 
 .video-icon a i {
@@ -7320,3 +7321,8 @@ span.flaticon-multiply i {
   text-align: center;
 }
 
+.rotated {
+  display: inline-block;   
+  transform: rotate(-15deg);  
+
+}

@@ -77,13 +77,13 @@ function Home() {
     };
 
 
-    
+
 
 
     return (
         <div className="App" style={{ overflow: 'hidden' }} >
 
-<Appbar/>
+            <Appbar />
             <Slider  {...settings} >
 
                 <div class="slider-section d-flex align-items-center">
@@ -166,17 +166,17 @@ function Home() {
                         <div class="col-lg-6 col-md-12">
                             <div class="about-section-title">
                                 <div class="about-section-sub-title wow slideInUp">
-                                    <h4>Our Introductton</h4>
+                                    <h4>Our Introduction</h4>
                                 </div>
-                                <div class="about-section-main-title wow slideInRight">
+                                <div class="about-section-main-title">
                                     <h2>We're Developing Future Solar Solutions </h2>
                                 </div>
                             </div>
                             <div class="tab">
-                                <ul class="tabs active wow slideInRight">
-                                    <li class="current"><a>About Us <i class="bi bi-arrow-up-right"></i></a></li>
-                                    <li class=""><a>Mission <i class="bi bi-arrow-up-right"></i></a></li>
-                                    <li class=""><a>Visiont <i class="bi bi-arrow-up-right"></i></a></li>
+                                <ul class="tabs active">
+                                    <li class="current"><a style={{color:'white'}} >About Us</a></li>
+                                    <li class=""><a style={{color:'white'}}>Mission</a></li>
+                                    <li class=""><a style={{color:'white'}}>Vision</a></li>
                                 </ul>
 
                                 <div class="tab_content">
@@ -186,7 +186,7 @@ function Home() {
                                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaquecy epsa abillo inventore veritatis architecto beatae</p>
                                             </div>
                                             <div class="row">
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                                     <div class="about-list wow slideInLeft">
                                                         <ul>
                                                             <li> Best Insurance Agency</li>
@@ -195,7 +195,7 @@ function Home() {
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                                     <div class="about-list wow slideInRight">
                                                         <ul>
                                                             <li> Dedicated Support </li>
@@ -206,7 +206,7 @@ function Home() {
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="solar-btn about">
-                                                        <a>Our Service</a>
+                                                        <a style={{color:'white'}}>Our Service</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -307,7 +307,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="solar-btn contact-us" style={{marginRight:'50px'}} >
+                        <div class="solar-btn contact-us" >
                             <a>Contact Now</a>
                         </div>
                     </div>
@@ -331,21 +331,21 @@ function Home() {
                             </div>
                             <div class="tab_container"  >
                                 <div id="tab1" class="tab_content" >
-                                    <ul class="accordion" style={{paddingLeft:'0px'}} >
+                                    <ul class="accordion" style={{ paddingLeft: '0px' }} >
                                         <li>
-                                            <a onClick={() => handleAccordionClick(0)} style={{backgroundColor: activeIndex === 0 ? "#E63A27":""}}  ><span> What warranties do I have for installation? </span></a>
+                                            <a onClick={() => handleAccordionClick(0)} style={{ backgroundColor: activeIndex === 0 ? "#E63A27" : "" }}  ><span> What warranties do I have for installation? </span></a>
                                             <p>The time it takes to repair a roof depends on the extent of the damage. For minor repairs, it might take an hour or two. For significant repairs, A or team might be at your home for half a day.</p>
                                         </li>
                                         <li>
-                                            <a onClick={() => handleAccordionClick(1)} style={{backgroundColor: activeIndex === 1 ? "#E63A27":""}} ><span> What warranties do I have for installation? </span></a>
+                                            <a onClick={() => handleAccordionClick(1)} style={{ backgroundColor: activeIndex === 1 ? "#E63A27" : "" }} ><span> What warranties do I have for installation? </span></a>
                                             <p>The time it takes to repair a roof depends on the extent of the damage. For minor repairs, it might take an hour or two. For significant repairs, A or team might be at your home for half a day.</p>
                                         </li>
                                         <li>
-                                            <a onClick={() => handleAccordionClick(2)} style={{backgroundColor: activeIndex === 2 ? "#E63A27":""}}><span> What warranties do I have for installation? </span></a>
+                                            <a onClick={() => handleAccordionClick(2)} style={{ backgroundColor: activeIndex === 2 ? "#E63A27" : "" }}><span> What warranties do I have for installation? </span></a>
                                             <p>The time it takes to repair a roof depends on the extent of the damage. For minor repairs, it might take an hour or two. For significant repairs, A or team might be at your home for half a day.</p>
                                         </li>
                                         <li>
-                                            <a onClick={() => handleAccordionClick(3)} style={{backgroundColor: activeIndex === 3 ? "#E63A27":""}}><span> What warranties do I have for installation? </span></a>
+                                            <a onClick={() => handleAccordionClick(3)} style={{ backgroundColor: activeIndex === 3 ? "#E63A27" : "" }}><span> What warranties do I have for installation? </span></a>
                                             <p>The time it takes to repair a roof depends on the extent of the damage. For minor repairs, it might take an hour or two. For significant repairs, A or team might be at your home for half a day.</p>
                                         </li>
                                     </ul>
@@ -412,88 +412,171 @@ function Home() {
                 </div>
             </div>
 
-            <div class="choose-us-section">               
-                    <div class="row choose">
-                        <div class="col-lg-6 col-md-12" style={{padding:'20px',flexWrap:'wrap'}} >
-                            <div class="section-title"  >
-                                <div class="section-sub-title choose">
-                                    <h4>Why Choose Us</h4>
-                                </div>
-                                <div class="section-main-title choose">
-                                    <h2>Best Solution For Your</h2>
-                                </div>
+            <div class="choose-us-section">
+                <div class="row choose">
+                    <div class="col-lg-6 col-md-12" style={{ padding: '20px', flexWrap: 'wrap' }} >
+                        <div class="section-title"  >
+                            <div class="section-sub-title choose">
+                                <h4>Why Choose Us</h4>
                             </div>
-                            <div class="choose-us-discription">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <div class="section-main-title choose">
+                                <h2>Best Solution For Your</h2>
                             </div>
-                            <div class="choose-us-content" >
-                                <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',flexWrap:'wrap',gap:'20px'}} >
+                        </div>
+                        <div class="choose-us-discription">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                        </div>
+                        <div class="choose-us-content" >
+                            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }} >
                                 <div class="choose-us-thumb">
                                     <img src={require("../src/images/resource/choose-thumb.png")} alt="" />
                                 </div>
-                                <div class="choose-us-list" >
-                                    <ul style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'flex-start',alignContent:'flex-start',gap:'10px'}} >
+                                <div class="choose-us-list" style={{textAlign:'left'}} >
+                                    <ul style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', alignContent: 'flex-start', gap: '10px' }} >
                                         <li><i class="bi bi-check"></i> Best of Perfect Shine</li>
                                         <li><i class="bi bi-check"></i> Geeen Energy Green Natural</li>
                                         <li><i class="bi bi-check"></i> Solar Energy fou All The </li>
                                     </ul>
                                 </div>
-                                </div>
-                                <div style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'center',alignItems:'center',gap:'20px'}} >
-                                    <div class="solar-btn choose">
-                                        <a>Get A Quote <i class="bi bi-arrow-right"></i></a>
-                                    </div>
-                                    <div class="choose-us-icon">
-                                        <i>✔</i>
-                                    </div>
-                                    <div class="choose-us-phone">
-                                        <h5>Emergency Call <span>+123956(6565)556-02</span></h5>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="choose-contact-box">
-                                <div class="choose-contact-title">
-                                    <h4>Make an Appointment</h4>
+                            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '20px' }} >
+                                <div class="solar-btn choose">
+                                    <a>Get A Quote <i class="bi bi-arrow-right"></i></a>
                                 </div>
-                                <form action="https://formspree.io/f/myyleorq" method="POST" id="it-form">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="form-box">
-                                                <input type="text" name="name" placeholder="Full Name *" />
-                                                <i class="bi bi-person"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-box">
-                                                <input type="text" name="email" placeholder="Email Here *" />
-                                                <i class="bi bi-envelope"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-box">
-                                                <input type="text" name="subject" placeholder="Select Service *" />
-                                                <i class="bi bi-pencil-square"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="form-box">
-                                                <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Your Comment *"></textarea>
-                                                <i class="bi bi-chat-left-text-fill"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="form-box-button">
-                                                <button type="Submit">Appontment Now <i class="bi bi-arrow-right"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>                                
+                                <div class="choose-us-icon">
+                                    <i>✔</i>
+                                </div>
+                                <div class="choose-us-phone">
+                                    <h5>Emergency Call <span>+123956(6565)556-02</span></h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                
+                    <div class="col-lg-6 col-md-12">
+                        <div class="choose-contact-box">
+                            <div class="choose-contact-title">
+                                <h4>Make an Appointment</h4>
+                            </div>
+                            <form action="https://formspree.io/f/myyleorq" method="POST" id="it-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-box">
+                                            <input type="text" name="name" placeholder="Full Name *" />
+                                            <i class="bi bi-person"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-box">
+                                            <input type="text" name="email" placeholder="Email Here *" />
+                                            <i class="bi bi-envelope"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-box">
+                                            <input type="text" name="subject" placeholder="Select Service *" />
+                                            <i class="bi bi-pencil-square"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-box">
+                                            <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Your Comment *"></textarea>
+                                            <i class="bi bi-chat-left-text-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-box-button">
+                                            <button type="Submit">Appontment Now <i class="bi bi-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="protfolio-section">
+                <div style={{padding:'5%'}}  >
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-md-6 col-sm-12">
+                            <div class="section-title">
+                                <div class="section-sub-title protfolio">
+                                    <h4>What We Project</h4>
+                                </div>
+                                <div class="section-main-title protfolio ">
+                                    <h2>Our Energy Project</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="solar-btn protfolio">
+                                <a>All  Projects <i>→</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div   style={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap'}} >
+                        <div >
+                            <div class="protfolio-thumb">
+                                <img src={require("../src/images/project/protfolio-thumb.png")} alt="" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="protfolio-item" style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',flexWrap:'wrap',gap:"1rem"}} >
+                                <div class="protfolio-item-content">
+                                    <div class="protfolio-item-numbar">
+                                        <span>01</span>
+                                    </div>
+                                    <div class="protfolio-item-title">
+                                        <h3><a href="project-details.html">Business Task Management</a></h3>
+                                        <h3><a href="project-details.html">Dashboard Design</a></h3>
+                                    </div>
+                                </div>
+                                <div class="protfolio-itme-hover">
+                                    <img src={require("../src/images/project/prot-hover.png")} alt="" />
+                                </div>
+                                <div class="protfolio-item-icon">
+                                    <i>↗</i>
+                                </div>
+                            </div>
+                            <div class="protfolio-item" style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',flexWrap:'wrap',gap:"1rem"}} >
+                                <div class="protfolio-item-content">
+                                    <div class="protfolio-item-numbar">
+                                        <span>02</span>
+                                    </div>
+                                    <div class="protfolio-item-title">
+                                        <h3><a href="project-details.html">Business Task Management</a></h3>
+                                        <h3><a href="project-details.html">Dashboard Design</a></h3>
+                                    </div>
+                                </div>
+                                <div class="protfolio-itme-hover">
+                                    <img src={require("../src/images/project/prot-hover.png")} alt="" />
+                                </div>
+                                <div class="protfolio-item-icon">
+                                    <i>↗</i>
+                                </div>
+                            </div>
+                            <div class="protfolio-item style-two" style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',flexWrap:'wrap',gap:"1rem"}} >
+                                <div class="protfolio-item-content">
+                                    <div class="protfolio-item-numbar">
+                                        <span>03</span>
+                                    </div>
+                                    <div class="protfolio-item-title">
+                                        <h3><a href="project-details.html">Business Task Management</a></h3>
+                                        <h3><a href="project-details.html">Dashboard Design</a></h3>
+                                    </div>
+                                </div>
+                                <div class="protfolio-itme-hover">
+                                    <img src={require("../src/images/project/prot-hover.png")} alt="" />
+                                </div>
+                                <div class="protfolio-item-icon">
+                                    <i>↗</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 

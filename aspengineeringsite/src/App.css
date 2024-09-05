@@ -3019,8 +3019,8 @@ a.handbag:before {
 }
 
 .slider-content h1 {
-  font-size: 75px;
-  line-height: 72px;
+  font-size: 32px;
+  line-height: 30px;
   color: #ffffff;
   font-weight: 600;
 }
@@ -3030,7 +3030,7 @@ a.handbag:before {
   line-height: 24px;
   color: #ffffff;
   font-weight: 400;
-  width: 53%;
+  width: 100%;
   margin: 37px 0 50px;
 }
 
@@ -3542,7 +3542,7 @@ a.handbag:before {
 }
 
 .section-main-title.pricing {
-  margin-bottom: 42px;
+  margin-bottom: 10px;
 }
 
 .section-sub-title.pricing h4 {
@@ -3735,6 +3735,7 @@ a.handbag:before {
 
 .service-text a {
   text-decoration: none !important;
+  color:  #fff !important;
 }
 
 .service-text h4 {
@@ -3816,7 +3817,7 @@ a.handbag:before {
 
 .row.contact-us {
   background: #e63a27;
-  padding: 50px 0 50px;
+  padding: 50px 2px 50px;
 }
 
 .contact-us-discription p {
@@ -3865,9 +3866,9 @@ a.handbag:before {
   font-size: 16px;
   line-height: 26px;
   color: #434141;
-  padding: 0 38px 17px;
+  padding: 0 10px 17px;
   margin: 0;
-  width: 91%;
+  width: 100%;
 }
 
 .accordion a:before {
@@ -4279,7 +4280,7 @@ a.active {
 }
 
 .form-box-button button {
-  width: 270px;
+  width: 164px;
   height: 60px;
   border-radius: 3px;
   background-color: #1c1632;
@@ -7307,8 +7308,8 @@ span.flaticon-multiply i {
 }
 
 .about-section-main-title h2 {
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 35px;
+  line-height: 50px;
   color: #1c1632;
   font-weight: 600;
   margin-bottom: 23px;
@@ -7319,6 +7320,7 @@ span.flaticon-multiply i {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 90px;
 }
 
 .rotated {

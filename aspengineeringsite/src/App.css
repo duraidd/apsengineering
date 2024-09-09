@@ -1626,6 +1626,9 @@
       padding: 10px 12px;
       font-size: 14px;
   }
+
+ 
+
   .choose-us-icon {
       margin-left: 14px;
   }
@@ -1843,7 +1846,7 @@
       line-height: 29px;
   }
   .slider-content p {
-      width: 100%;
+      width: 80%;
       margin: 22px 0 28px;
       font-size: 14px;
   }
@@ -2925,6 +2928,10 @@ a.handbag:before {
   color: #ffffff;
 }
 
+.solar-btn.slider1 a:hover {
+  color: #ffffff;
+}
+
 /* about btn */
 
 .solar-btn.about {
@@ -2959,7 +2966,11 @@ a.handbag:before {
 }
 
 .solar-btn.choose a {
-  padding: 16px 30px;
+  padding: 16px 30px;  
+}
+
+.solar-btn.choose a:hover {
+  color: #ffffff;
 }
 
 /* protfolio btn */
@@ -3030,7 +3041,7 @@ a.handbag:before {
   line-height: 24px;
   color: #ffffff;
   font-weight: 400;
-  width: 100%;
+  width: 75%;
   margin: 37px 0 50px;
 }
 

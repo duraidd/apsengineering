@@ -96,10 +96,10 @@ function Home() {
                                     <h1>Reliadle Energy</h1>
                                     <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
                                     <div style={{ display: 'flex', flexDirection: 'row' }} >
-                                        <div class="solar-btn slider1 wow slideInLeft">
+                                        <div class="solar-btn slider1">
                                             <a>Our Service</a>
                                         </div>
-                                        <div class="solar-btn slider2  wow slideRight">
+                                        <div class="solar-btn slider2">
                                             <a>More About!</a>
                                         </div>
                                     </div>
@@ -441,7 +441,7 @@ function Home() {
                             </div>
                             <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '20px' }} >
                                 <div class="solar-btn choose">
-                                    <a>Get A Quote <i class="bi bi-arrow-right"></i></a>
+                                    <a>Get A Quote</a>
                                 </div>
                                 <div class="choose-us-icon">
                                     <i>✔</i>

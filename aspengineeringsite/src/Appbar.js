@@ -38,10 +38,12 @@ const navItems = [
 
 const servicesItem = [
   // { subMenuName: "UI Work", subMenuLink: "/ui-work" },
-  { subMenuName: "Web Application", subMenuLink: "/web-application" },
-  { subMenuName: "Mobile Application", subMenuLink: "/mobile-application" },
-  { subMenuName: "Cloud Services", subMenuLink: "/cloud-services" },
-  { subMenuName: "Digital Marketing", subMenuLink: "/digital-marketing" }
+  { subMenuName: "Power Plant Work", subMenuLink: "/powerplant" },
+  { subMenuName: "Solar Energy", subMenuLink: "/solarenergy" },
+  { subMenuName: "Wind Power", subMenuLink: "/windpower" },
+  { subMenuName: "Electrical", subMenuLink: "/electrical" },
+  { subMenuName: "Civil", subMenuLink: "/civil" },
+  { subMenuName: "Rooftop Grid-Tied", subMenuLink: "/rooftop" }
 
 
 
@@ -278,9 +280,11 @@ function Appheader(props) {
         sx={{
           backgroundColor: "white"
         }}
+
+        className="solar-header-section"
         
       >
-        <Toolbar className="solar-header-section" >
+        <Toolbar  >
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -297,7 +301,7 @@ function Appheader(props) {
           >
             APS Technologies pvt ltd
           </Typography> */}
-          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "block" }, color: "black", paddingTop: '8px', marginRight: '2px' ,cursor:'pointer'  }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "block" }, color: "black", paddingTop: '8px' ,cursor:'pointer' ,marginLeft:'10%' ,'@media (max-width:768px)':{marginLeft:'0%'} }}>
             <img src={Logoimg} alt="logo"  onClick={()=>navigate('/')}  />
           </Box>
 
@@ -309,6 +313,12 @@ function Appheader(props) {
                   color: item.section === props.first ? "#2F4858" : "black",
                   fontSize: "1rem",                  
                   fontWeight: 700,
+                  border:'none',
+                  outline:'none', 
+                  '&:focus': {
+                    outline: 'none',
+                    boxShadow: 'none',
+                  },                                                     
                   fontFamily:"Plus Jakarta Sans",
                   textDecoration: item.section === props.first ? "underline" : "",
                   textDecorationThickness:'5px',
@@ -318,8 +328,8 @@ function Appheader(props) {
                 }}
                 onClick={() => handleNav(item)}
                 onMouseOver={(e) => handleShow(e, item)}
-              >
-                {item.name}
+              >                
+                {item.name === "Services" ?   item.name+"⮟" : item.name}
               </Button>
             ))}
 

@@ -1,8 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import Slider from 'react-slick'
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Appbar from './Appbar';
+import Footer from './Footer';
+import { useLocation } from 'react-router-dom';
+import { ScrollToTop } from "react-simple-scroll-up";
 
 
 
@@ -76,15 +78,46 @@ function Home() {
         prevArrow: <PrevArrow />,
     };
 
+    const about = useRef();
+    const home = useRef();    
+    const contact = useRef();
+    const location = useLocation();
+    const section = location.state?.section || "home"
+    const [first, setfirst] = useState(section);
+    const [second, setsecond] = useState("");
+
+    
+
+    useEffect(() => {
 
 
+
+        if (first === "about") {
+          window.scrollTo({ top: about.current.offsetTop, behavior: "smooth" });
+        }
+    
+        if (first === "home") {
+          // window.scrollTo({ top: home.current.offsetTop, behavior: "smooth" });
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }
+    
+        if (first === "contact") {
+          window.scrollTo({ top: contact.current.offsetTop, behavior: "smooth" });
+        }    
+       
+      }, [first])
+
+
+      console.log(first)
 
 
     return (
-        <div className="App" style={{ overflow: 'hidden' }} >
+        <div  style={{ overflow: 'hidden' }} >
 
-            <Appbar />
-            <Slider  {...settings} >
+<ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
+
+            <Appbar passChildData={setfirst} addData={second} first={first}  />
+            <Slider  {...settings}  ref={home} >
 
                 <div class="slider-section d-flex align-items-center">
                     <div class="container">
@@ -133,7 +166,7 @@ function Home() {
 
             </Slider>
 
-            <div class="about-section">
+            <div ref={about} class="about-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
@@ -412,7 +445,7 @@ function Home() {
                 </div>
             </div>
 
-            <div class="choose-us-section">
+            <div ref={contact} class="choose-us-section">
                 <div class="row choose">
                     <div class="col-lg-6 col-md-12" style={{ padding: '20px', flexWrap: 'wrap' }} >
                         <div class="section-title"  >
@@ -579,6 +612,8 @@ function Home() {
                 </div>
             </div>
 
+
+          <Footer/>
 
         </div>
     );

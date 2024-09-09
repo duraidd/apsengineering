@@ -607,7 +607,7 @@
       display: none;
   }
   .solar-header-section {
-      display: none;
+      display: none; 
   }
   /* slider section */
   .slider-list.owl-carousel.owl-loaded.owl-drag {
@@ -922,9 +922,9 @@
   .solar-topbar-section {
       display: none;
   }
-  .solar-header-section {
+  /* .solar-header-section {
       display: none !important;
-  }
+  } */
   /* slider section */
   .slider-list.owl-carousel.owl-loaded.owl-drag {
       display: inline-block;

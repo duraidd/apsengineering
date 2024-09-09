@@ -5,6 +5,7 @@ import Appbar from './Appbar';
 import Footer from './Footer';
 import { useLocation } from 'react-router-dom';
 import { ScrollToTop } from "react-simple-scroll-up";
+import { Box } from '@mui/material';
 
 
 
@@ -79,45 +80,45 @@ function Home() {
     };
 
     const about = useRef();
-    const home = useRef();    
+    const home = useRef();
     const contact = useRef();
     const location = useLocation();
     const section = location.state?.section || "home"
     const [first, setfirst] = useState(section);
     const [second, setsecond] = useState("");
 
-    
+
 
     useEffect(() => {
 
 
 
         if (first === "about") {
-          window.scrollTo({ top: about.current.offsetTop, behavior: "smooth" });
+            window.scrollTo({ top: about.current.offsetTop, behavior: "smooth" });
         }
-    
+
         if (first === "home") {
-          // window.scrollTo({ top: home.current.offsetTop, behavior: "smooth" });
-          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            // window.scrollTo({ top: home.current.offsetTop, behavior: "smooth" });
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         }
-    
+
         if (first === "contact") {
-          window.scrollTo({ top: contact.current.offsetTop, behavior: "smooth" });
-        }    
-       
-      }, [first])
+            window.scrollTo({ top: contact.current.offsetTop, behavior: "smooth" });
+        }
+
+    }, [first])
 
 
-      console.log(first)
+    console.log(first)
 
 
     return (
-        <div  style={{ overflow: 'hidden' }} >
+        <Box sx={{ overflow: 'hidden' }} >
 
-<ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
+            <ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
 
-            <Appbar passChildData={setfirst} addData={second} first={first}  />
-            <Slider  {...settings}  ref={home} >
+            <Appbar passChildData={setfirst} addData={second} first={first} />
+            <Slider  {...settings} ref={home} >
 
                 <div class="slider-section d-flex align-items-center">
                     <div class="container">
@@ -166,7 +167,7 @@ function Home() {
 
             </Slider>
 
-            <div ref={about} class="about-section">
+            <div ref={about} class="about-section" style={{ textAlign: 'center' }}>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
@@ -207,9 +208,9 @@ function Home() {
                             </div>
                             <div class="tab">
                                 <ul class="tabs active">
-                                    <li class="current"><a style={{color:'white'}} >About Us</a></li>
-                                    <li class=""><a style={{color:'white'}}>Mission</a></li>
-                                    <li class=""><a style={{color:'white'}}>Vision</a></li>
+                                    <li class="current"><a style={{ color: 'white' }} >About Us</a></li>
+                                    <li class=""><a style={{ color: 'white' }}>Mission</a></li>
+                                    <li class=""><a style={{ color: 'white' }}>Vision</a></li>
                                 </ul>
 
                                 <div class="tab_content">
@@ -239,7 +240,7 @@ function Home() {
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="solar-btn about">
-                                                        <a style={{color:'white'}}>Our Service</a>
+                                                        <a style={{ color: 'white' }}>Our Service</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -254,7 +255,7 @@ function Home() {
             </div>
 
 
-            <div class="service-section">
+            <div class="service-section" style={{ textAlign: 'center' }}>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -325,7 +326,7 @@ function Home() {
             </div>
 
 
-            <div class="contact-us-section">
+            <div class="contact-us-section" style={{ textAlign: 'center' }}>
                 {/* <div class="container"> */}
                 <div class="row contact-us align-items-center">
                     <div class="col-lg-2"></div>
@@ -349,7 +350,7 @@ function Home() {
             </div>
 
 
-            <div class="pricing-section">
+            <div class="pricing-section" style={{ textAlign: 'center' }}>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
@@ -431,7 +432,7 @@ function Home() {
                 </div>
             </div>
 
-            <div class="call-do-action-section">
+            <div class="call-do-action-section" style={{ textAlign: 'center' }}>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -445,7 +446,7 @@ function Home() {
                 </div>
             </div>
 
-            <div ref={contact} class="choose-us-section">
+            <div ref={contact} class="choose-us-section" style={{ textAlign: 'center' }}>
                 <div class="row choose">
                     <div class="col-lg-6 col-md-12" style={{ padding: '20px', flexWrap: 'wrap' }} >
                         <div class="section-title"  >
@@ -464,7 +465,7 @@ function Home() {
                                 <div class="choose-us-thumb">
                                     <img src={require("../src/images/resource/choose-thumb.png")} alt="" />
                                 </div>
-                                <div class="choose-us-list" style={{textAlign:'left'}} >
+                                <div class="choose-us-list" style={{ textAlign: 'left' }} >
                                     <ul style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', alignContent: 'flex-start', gap: '10px' }} >
                                         <li><i class="bi bi-check"></i> Best of Perfect Shine</li>
                                         <li><i class="bi bi-check"></i> Geeen Energy Green Natural</li>
@@ -530,8 +531,8 @@ function Home() {
             </div>
 
 
-            <div class="protfolio-section">
-                <div style={{padding:'5%'}}  >
+            <div class="protfolio-section" style={{ textAlign: 'center' }}>
+                <div style={{ padding: '5%' }}  >
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-md-6 col-sm-12">
                             <div class="section-title">
@@ -549,14 +550,14 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div   style={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap'}} >
+                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap' }} >
                         <div >
                             <div class="protfolio-thumb">
                                 <img src={require("../src/images/project/protfolio-thumb.png")} alt="" />
                             </div>
                         </div>
                         <div>
-                            <div class="protfolio-item" style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',flexWrap:'wrap',gap:"1rem"}} >
+                            <div class="protfolio-item" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: "1rem" }} >
                                 <div class="protfolio-item-content">
                                     <div class="protfolio-item-numbar">
                                         <span>01</span>
@@ -573,7 +574,7 @@ function Home() {
                                     <i>↗</i>
                                 </div>
                             </div>
-                            <div class="protfolio-item" style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',flexWrap:'wrap',gap:"1rem"}} >
+                            <div class="protfolio-item" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: "1rem" }} >
                                 <div class="protfolio-item-content">
                                     <div class="protfolio-item-numbar">
                                         <span>02</span>
@@ -590,7 +591,7 @@ function Home() {
                                     <i>↗</i>
                                 </div>
                             </div>
-                            <div class="protfolio-item style-two" style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',flexWrap:'wrap',gap:"1rem"}} >
+                            <div class="protfolio-item style-two" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: "1rem" }} >
                                 <div class="protfolio-item-content">
                                     <div class="protfolio-item-numbar">
                                         <span>03</span>
@@ -613,9 +614,9 @@ function Home() {
             </div>
 
 
-          <Footer/>
+            <Footer />
 
-        </div>
+        </Box>
     );
 }
 

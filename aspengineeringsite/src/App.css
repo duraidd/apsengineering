@@ -3013,12 +3013,17 @@ a.handbag:before {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 800px; */
+  height: 800px;
   position: relative;
 }
 
 .slider-section.style-three {
   background: url(../src/images/slider/slider3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  position: relative;
 }
 
 .slider-content h4 {
@@ -7329,9 +7334,10 @@ span.flaticon-multiply i {
 .slider-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 12rem;
 }
 
 .rotated {

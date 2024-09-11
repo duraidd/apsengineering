@@ -5282,7 +5282,7 @@ span.fill {
 ===================================================*/
 
 .breatcome-section {
-  /* background: url(../images/resource/breatcame-bg.jpg); */
+  background: url(../src/images/resource/breatcame-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 130px 0;
@@ -5309,7 +5309,9 @@ span.fill {
 }
 
 .bratcome-text ul {
-  list-style: none;
+  list-style: none;  
+  margin-left: -30px;
+  margin-bottom: -10px;
 }
 
 .bratcome-text ul li {
@@ -5318,14 +5320,14 @@ span.fill {
   font-size: 16px;
   line-height: 27px;
   color: #434141;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .bratcome-text ul li a {
   display: inline-block;
   font-size: 16px;
   color: #434141;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   position: relative;
   transition: .5s;
@@ -5820,7 +5822,7 @@ blockquote {
 ===================================================*/
 
 .project-grid-section {
-  padding: 118px 0 88px;
+  padding: 0px 0 88px;
 }
 
 .protfolio-menu ul {
@@ -5874,7 +5876,7 @@ blockquote {
   padding: 22px 42px 30px;
   border-radius: 5px;
   position: relative;
-  z-index: 1;
+  z-index: 1;  
 }
 
 .project-content::before {
@@ -7345,3 +7347,5 @@ span.flaticon-multiply i {
   transform: rotate(-15deg);  
 
 }
+
+

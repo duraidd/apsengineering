@@ -273,7 +273,7 @@ function Appheader(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" ,overflow:'hidden' }}  >
+    <Box sx={{ overflow:'hidden' }}  >
       <CssBaseline />
       <AppBar
         component="nav"
@@ -334,7 +334,7 @@ function Appheader(props) {
             ))}
 
             <Menu
-              style={{ zIndex: 1, marginTop: "1%" }}
+              style={{ zIndex: 999, marginTop: "1%" }}
               transitionDuration={500}
               anchorEl={project}
               open={Boolean(project)}

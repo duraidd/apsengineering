@@ -38,8 +38,8 @@ const navItems = [
 
 const servicesItem = [
   // { subMenuName: "UI Work", subMenuLink: "/ui-work" },
-  { subMenuName: "Power Plant Work", subMenuLink: "/powerplant" },
-  { subMenuName: "Solar Energy", subMenuLink: "/solarenergy" },
+  { subMenuName: "Power Plant Work", subMenuLink: "/solarenergy" },
+  { subMenuName: "Solar Energy", subMenuLink: "/powerplant" },
   { subMenuName: "Wind Power", subMenuLink: "/windpower" },
   { subMenuName: "Electrical", subMenuLink: "/electrical" },
   { subMenuName: "Civil", subMenuLink: "/civil" },

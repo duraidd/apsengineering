@@ -15,12 +15,12 @@ function Powerplant() {
                         <div class="col-lg-12 col-md-12">
                             <div class="breatcome-content">
                                 <div class="breatcome-title">
-                                    <h1>Power Plant Work</h1>
+                                    <h1>Solar Energy</h1>
                                 </div>
                                 <div class="bratcome-text">
                                     <ul>
                                         <li><a>Services</a></li>
-                                        <li>Power Plant Work</li>
+                                        <li>Solar Energy</li>
                                     </ul>
                                 </div>
                             </div>
@@ -31,7 +31,7 @@ function Powerplant() {
 
 
             <div class="project-details-section">
-                <div class="container">
+                <div style={{padding:'0% 8%'}}>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
@@ -67,9 +67,9 @@ function Powerplant() {
                                     <li>
                                         <h6>share:</h6>
                                         <ul class="d-flex">
-                                            <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href='https://www.facebook.com/people/Aps-Techh/pfbid02yEy6wg1TQKCJVE9ZeuRV1QbnFMj2VfFt22QFeFLAUQU2HFhVodPU36ijNe3eNx3nl/?mibextid=ZbWKwL' target='_blank'><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href='https://www.instagram.com/aps_technologies.tvl/?igsh=NmZ1bm14ZDZweHMz' target='_blank'><i class="fab fa-instagram"></i></a></li>
                                             <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
                                     </li>

@@ -6,8 +6,7 @@ import Footer from './Footer';
 import { useLocation } from 'react-router-dom';
 import { ScrollToTop } from "react-simple-scroll-up";
 import { Box } from '@mui/material';
-
-
+import Scrollanimation from "react-animate-on-scroll";
 
 const NextArrow = ({ onClick }) => {
     return (
@@ -118,26 +117,29 @@ function Home() {
             <ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
 
             <Appbar passChildData={setfirst} addData={second} first={first} />
+
             <Slider  {...settings} ref={home} >
 
                 <div class="slider-section d-flex align-items-center">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-12">
-                                <div class="slider-content">
-                                    <h4> Our Solar Systems</h4>
-                                    <h1>Energize Society By</h1>
-                                    <h1>Reliadle Energy</h1>
-                                    <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
-                                    <div style={{ display: 'flex', flexDirection: 'row' }} >
-                                        <div class="solar-btn slider1">
-                                            <a>Our Service</a>
-                                        </div>
-                                        <div class="solar-btn slider2">
-                                            <a>More About!</a>
-                                        </div>
-                                    </div>
+                            <Scrollanimation animateIn="zoomIn" >
+                                <div class="slider-content">                              
+                                        <h4> Our Solar Systems</h4>
+                                        <h1>Energize Society By</h1>
+                                        <h1>Reliadle Energy</h1>
+                                        <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
+                                        <div style={{ display: 'flex', flexDirection: 'row',justifyContent:'center' }} >
+                                            <div class="solar-btn slider1">
+                                                <a>Our Service</a>
+                                            </div>
+                                            <div class="solar-btn slider2">
+                                                <a>More About!</a>
+                                            </div>
+                                        </div>                                    
                                 </div>
+                                </Scrollanimation>
                             </div>
                         </div>
                     </div>
@@ -146,6 +148,7 @@ function Home() {
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-12">
+                            <Scrollanimation animateIn="zoomIn" >
                                 <div class="slider-content" >
                                     <h4> Our Solar Systems</h4>
                                     <h1>Energize Society By</h1>
@@ -160,6 +163,7 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
+                                </Scrollanimation>
                             </div>
                         </div>
                     </div>
@@ -167,11 +171,15 @@ function Home() {
 
             </Slider>
 
+
+
             <div ref={about} class="about-section" style={{ textAlign: 'center' }}>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
+                            
                             <div class="about-thumb">
+                            <Scrollanimation animateIn="fadeInLeft" >
                                 <img src={require("../src/images/about/about-thumb.jpg")} alt="" />
                                 <div class="about-counter">
                                     <div class="about-counter-text">
@@ -184,7 +192,9 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="about-counter-two d-flex align-items-center">
+                                </Scrollanimation>
+                                <Scrollanimation animateIn="fadeInLeft">
+                                <div class="about-counter-two d-flex align-items-center">                                    
                                     <div class="about-counter-img">
                                         <img src={require("../src/images/about/about-shape.png")} alt="" />
                                     </div>
@@ -193,11 +203,16 @@ function Home() {
                                         <span>+</span>
                                         <h5>Satisfied Clients</h5>
                                     </div>
+                                    
                                 </div>
+                                </Scrollanimation>
                             </div>
-
+                            
                         </div>
+
+                        
                         <div class="col-lg-6 col-md-12">
+                        <Scrollanimation animateIn="fadeInRight" >
                             <div class="about-section-title">
                                 <div class="about-section-sub-title wow slideInUp">
                                     <h4>Our Introduction</h4>
@@ -249,7 +264,9 @@ function Home() {
 
                                 </div>
                             </div>
+                            </Scrollanimation>
                         </div>
+                        
                     </div>
                 </div>
             </div>

@@ -19,8 +19,8 @@ function Powerplant() {
                         </div>
                         <div class="bratcome-text">
                             <ul>
-                                <li><a>Home</a></li>
-                                <li> Projects Gird</li>
+                                <li><a>Services</a></li>
+                                <li>Power Plant Work</li>
                             </ul>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ function Powerplant() {
 
 
     <div class="service-details-section">
-        <div style={{padding:'0px 50px'}} >
+        <div style={{padding:'0% 7%'}} >
             <div class="row">
                 <div>
                     <div class="service-details-thumb">
@@ -73,7 +73,7 @@ function Powerplant() {
 
     <div class="project-grid-section">        
            
-            <div  style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'center',alignItems:'center',gap:"30px 10px",padding:"0 5% 0 5%"}} >
+            <div  style={{display:'flex',flexDirection:'row',flexWrap:'wrap',justifyContent:'center',alignItems:'center',gap:"30px 10px",padding:"0 2% 0 2%"}} >
                 <div>
                     <div class="project-grid-box">
                         <div class="project-thumb">

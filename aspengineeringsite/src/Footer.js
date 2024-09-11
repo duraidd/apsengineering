@@ -82,7 +82,7 @@ function Footer() {
                     </Box>
                 </Box>
             </Box>
-            <Box sx={{ '@media (max-width:798px)': { display: 'none' } }} >
+            <Box sx={{ '@media (max-width:1024px)': { display: 'none' } }} >
                 <img src={require("../src/images/resource/footer-thumb.png")} width={'100%'} alt="" />
             </Box>
         </Box>

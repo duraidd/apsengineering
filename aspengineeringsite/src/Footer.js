@@ -14,7 +14,7 @@ const P = styled.p`
   
   font-family: 'Plus Jakarta Sans';
   margin-bottom: 20px;  
-  cursor: pointer;
+  cursor: pointer;  
   
   &:hover {
     color: #e63a27;    

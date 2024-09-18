@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Appheader from '../Appbar'
 import '../App.css'
 import Footer from '../Footer'
 
 
 function Powerplant() {
+
+    useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });      
+    }, [])
+    
+
+
     return (
         <div style={{ overflow: 'hidden' }}>
             <Appheader first={"services"} />

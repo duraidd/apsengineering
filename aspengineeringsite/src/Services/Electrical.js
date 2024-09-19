@@ -21,12 +21,12 @@ function Electrical() {
                         <div class="col-lg-12 col-md-12">
                             <div class="breatcome-content">
                                 <div class="breatcome-title">
-                                    <h1>Solar Energy</h1>
+                                    <h1>Electrical</h1>
                                 </div>
                                 <div class="bratcome-text">
                                     <ul>
                                         <li><a>Services</a></li>
-                                        <li>Solar Energy</li>
+                                        <li>Electrical</li>
                                     </ul>
                                 </div>
                             </div>

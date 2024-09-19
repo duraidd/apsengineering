@@ -6366,9 +6366,9 @@ span.process-bar.style-two {
 <-- Solar Panel  Project Details Inner Page Css-->
 ===================================================*/
 
-.project-details-section {
+/* .project-details-section {
   padding: 118px 0 0px;
-}
+} */
 
 .project-details-section .info-area {
   padding-left: 80px;
@@ -16417,13 +16417,14 @@ ul.comment-list:has(>.th-comment-item~.th-comment-item):first-child>.th-post-com
 
 .hero-1 .hero-img {
     position: absolute;
-    bottom: 0;
-    right: 7%;
+    top: 200px;
+    right: 2%;
     z-index: 3;
     width: 100%;
     max-width: 744px;
     text-align: center
 }
+
 
 .hero-1 .hero-img:before {
     content: '';
@@ -16539,7 +16540,7 @@ ul.comment-list:has(>.th-comment-item~.th-comment-item):first-child>.th-post-com
         position: relative;
         max-width: 600px;
         text-align: center;
-        margin: 0 auto 0 auto
+        margin: 0 auto 100 auto
     }
     .hero-1 .hero-arrow {
         display: none
@@ -20855,7 +20856,8 @@ span.select2-selection.select2-selection--single:focus {
 
 .img-box1 .img1 {
     border-radius: 48px;
-    overflow: hidden
+    overflow: hidden;
+    height: 637px;
 }
 
 .img-box1 .img1 img {

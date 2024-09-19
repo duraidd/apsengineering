@@ -37,7 +37,7 @@ function Windpower() {
 
 
             <div class="project-details-section">
-                <div style={{padding:'0% 8%'}}>
+                <div style={{padding:'4% 8% 0% 8%'}}>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
@@ -52,7 +52,7 @@ function Windpower() {
                                 <ul class="info">
                                     <li>
                                         <h6>project name:</h6>
-                                        <p>solar &amp; exterior design</p>
+                                        <p>Wind &amp; Power Plant</p>
                                     </li>
                                     <li>
                                         <h6>client:</h6>

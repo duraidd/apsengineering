@@ -87,7 +87,7 @@ function Solarenergy() {
                                 <div class="bratcome-text">
                                     <ul>
                                         <li><a>Services</a></li>
-                                        <li><a>Power Plant Work</a></li>
+                                        <li>Power Plant Work</li>
                                     </ul>
                                 </div>
                             </div>

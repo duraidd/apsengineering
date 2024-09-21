@@ -40,7 +40,7 @@ function Rooftop() {
           <div class="row">
             <div>
               <div class="service-details-thumb">
-                <img src={require("../images/resource/service-details.png")} alt="service-details" />
+                <img src={require("../images/resource/roof1.jpg")} alt="service-details" />
               </div>
               <div class="service-details-title">
                 <h4>This service overview</h4>
@@ -92,7 +92,7 @@ function Rooftop() {
                 <ul class="info">
                   <li>
                     <h6>project name:</h6>
-                    <p>solar &amp; exterior design</p>
+                    <p>Rooftop &amp; grid tied</p>
                   </li>
                   <li>
                     <h6>client:</h6>
@@ -174,7 +174,7 @@ function Rooftop() {
           <div>
             <div class="project-grid-box">
               <div class="project-thumb">
-                <img src={require("../images/project/project1.png")} alt="" />
+                <img src={require("../images/project/roof2.jpg")} alt="" />
               </div>
               <div class="project-content">
                 <h4>Chain Finance Program</h4>

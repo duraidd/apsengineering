@@ -16,7 +16,7 @@ function Powerplant() {
         <div style={{ overflow: 'hidden' }}>
             <Appheader first={"services"} />
 
-            <div class="breatcome-section">
+            <div class="breatcome2-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
@@ -38,7 +38,7 @@ function Powerplant() {
 
 
             <div class="project-details-section">
-                <div style={{padding:'0% 8%'}}>
+                <div style={{padding:'5% 8%'}}>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
@@ -187,7 +187,7 @@ function Powerplant() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project2.png")} alt="" />
+                                <img src={require("../images/project/solar.png")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>New Public Attitude Tracker</h4>
@@ -198,7 +198,7 @@ function Powerplant() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project3.png")} alt="" />
+                                <img src={require("../images/project/solar1.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Smarter Ways to Manage</h4>

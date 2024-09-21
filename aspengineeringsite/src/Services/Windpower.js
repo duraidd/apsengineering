@@ -15,15 +15,15 @@ function Windpower() {
     <div style={{ overflow: 'hidden' }}>
             <Appheader first={"services"} />
 
-            <div class="breatcome-section">
+            <div class="breatcome1-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                            <div class="breatcome-content">
-                                <div class="breatcome-title">
+                            <div class="breatcome1-content">
+                                <div class="breatcome1-title">
                                     <h1>Wind Power</h1>
                                 </div>
-                                <div class="bratcome-text">
+                                <div class="bratcome1-text">
                                     <ul>
                                         <li><a>Services</a></li>
                                         <li>Wind Power</li>
@@ -41,7 +41,7 @@ function Windpower() {
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
-                                <img src={require("../images/resource/project-details1.jpg")} alt="Service" />
+                                <img src={require("../images/resource/windpower.jpg")} alt="Service" />
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -118,7 +118,7 @@ function Windpower() {
                                 </div>
                                 <div class="col-lg-4 col-md-12">
                                     <div class="image">
-                                        <img src={require("../images/resource/service3.png")} alt="Service" />
+                                        <img src={require("../images/resource/windpower1.jpg")} alt="Service" />
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ function Windpower() {
                     <div class="row">
                         <div>
                             <div class="service-details-thumb">
-                                <img src={require("../images/resource/service-details.png")} alt="service-details" />
+                                <img src={require("../images/resource/windpower2.jpg")} alt="service-details" />
                             </div>
                             <div class="service-details-title">
                                 <h4>This service overview</h4>
@@ -146,12 +146,12 @@ function Windpower() {
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="service-details-thumb-two">
-                                        <img src={require("../images/resource/service-details2.png")} alt="" />
+                                        <img src={require("../images/resource/windpower3.jpg")} alt="" />
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="service-details-thumb-two">
-                                        <img src={require("../images/resource/service-details3.png")} alt="" />
+                                        <img src={require("../images/resource/windpower4.jpg")} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@ function Windpower() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project1.png")} alt="" />
+                                <img src={require("../images/project/windpower5.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Chain Finance Program</h4>
@@ -186,7 +186,7 @@ function Windpower() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project2.png")} alt="" />
+                                <img src={require("../images/project/windpower6.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>New Public Attitude Tracker</h4>
@@ -208,7 +208,7 @@ function Windpower() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project4.png")} alt="" />
+                                <img src={require("../images/project/windmillone.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Task Managemen</h4>
@@ -219,7 +219,7 @@ function Windpower() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project5.png")} alt="" />
+                                <img src={require("../images/project/windmill22.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Addressing Wind Energy</h4>
@@ -230,7 +230,7 @@ function Windpower() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project6.png")} alt="" />
+                                <img src={require("../images/project/windmill33.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Historical Book Design</h4>

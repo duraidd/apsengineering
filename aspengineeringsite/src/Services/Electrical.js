@@ -15,7 +15,7 @@ function Electrical() {
     <div style={{ overflow: 'hidden' }}>
             <Appheader first={"services"} />
 
-            <div class="breatcome-section">
+            <div class="breatcome4-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
@@ -37,11 +37,11 @@ function Electrical() {
 
 
             <div class="project-details-section">
-                <div style={{padding:'0% 8%'}}>
+                <div style={{padding:'5% 8%'}}>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
-                                <img src={require("../images/resource/project-details1.jpg")} alt="Service" />
+                                <img src={require("../images/resource/elct1.jpg")} alt="Service" />
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -52,7 +52,7 @@ function Electrical() {
                                 <ul class="info">
                                     <li>
                                         <h6>project name:</h6>
-                                        <p>solar &amp; exterior design</p>
+                                        <p>Electrical &amp; exterior work</p>
                                     </li>
                                     <li>
                                         <h6>client:</h6>
@@ -118,7 +118,7 @@ function Electrical() {
                                 </div>
                                 <div class="col-lg-4 col-md-12">
                                     <div class="image">
-                                        <img src={require("../images/resource/service3.png")} alt="Service" />
+                                        <img src={require("../images/resource/elct2.jpg")} alt="Service" />
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ function Electrical() {
                     <div class="row">
                         <div>
                             <div class="service-details-thumb">
-                                <img src={require("../images/resource/service-details.png")} alt="service-details" />
+                                <img src={require("../images/resource/elct4.jpg")} alt="service-details" />
                             </div>
                             <div class="service-details-title">
                                 <h4>This service overview</h4>
@@ -146,12 +146,12 @@ function Electrical() {
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="service-details-thumb-two">
-                                        <img src={require("../images/resource/service-details2.png")} alt="" />
+                                        <img src={require("../images/resource/elct.jpg")} alt="" />
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="service-details-thumb-two">
-                                        <img src={require("../images/resource/service-details3.png")} alt="" />
+                                        <img src={require("../images/resource/elct55.jpg")} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@ function Electrical() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project1.png")} alt="" />
+                                <img src={require("../images/project/elct66.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Chain Finance Program</h4>
@@ -186,7 +186,7 @@ function Electrical() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project2.png")} alt="" />
+                                <img src={require("../images/project/elct77.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>New Public Attitude Tracker</h4>
@@ -197,7 +197,7 @@ function Electrical() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project3.png")} alt="" />
+                                <img src={require("../images/project/elct88.png")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Smarter Ways to Manage</h4>
@@ -208,7 +208,7 @@ function Electrical() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project4.png")} alt="" />
+                                <img src={require("../images/project/elct10.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Task Managemen</h4>
@@ -219,7 +219,7 @@ function Electrical() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project5.png")} alt="" />
+                                <img src={require("../images/project/elct11.jpg")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Addressing Wind Energy</h4>
@@ -230,7 +230,7 @@ function Electrical() {
                     <div>
                         <div class="project-grid-box">
                             <div class="project-thumb">
-                                <img src={require("../images/project/project6.png")} alt="" />
+                                <img src={require("../images/project/elct60.png")} alt="" />
                             </div>
                             <div class="project-content">
                                 <h4>Historical Book Design</h4>

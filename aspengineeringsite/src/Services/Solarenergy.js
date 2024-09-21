@@ -76,7 +76,7 @@ function Solarenergy() {
         <>
             <Appheader first={"services"} />
 
-            <div class="breatcome-section">
+            <div class="breatcome3-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
@@ -97,7 +97,7 @@ function Solarenergy() {
             </div>
 
             <div class="th-hero-wrapper hero-1 slider-area" id="hero" /*data-bg-src={require("../images/hero/hero_bg_1.jpg")}*/ style={{
-                backgroundImage: `url(${require("../images/hero/hero_bg_1.jpg")})`, marginTop: '40px', padding: '200px 0px 0px 0px'
+                backgroundImage: `url(${require("../images/hero/hero_bg_1.jpg")})`, marginTop: '40px',backgroundRepeat:'no-repeat'
             }}
             >
                 <div class="shape-mockup spin" ><img src={Img1} alt="shape" /></div>
@@ -117,7 +117,7 @@ function Solarenergy() {
                                 <div class="shape1">
                                     <img src={Img5} alt="shape" />
                                 </div>
-                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '-179px' }} >
+                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
                                     <img src={Img4} alt="Image" />
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ function Solarenergy() {
                                 <div class="shape1">
                                     <img src={Img5} alt="shape" />
                                 </div>
-                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '-179px' }} >
+                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
                                     <img src={Img6} alt="Image" />
                                 </div>
                             </div>
@@ -155,7 +155,7 @@ function Solarenergy() {
                                 <div class="shape1">
                                     <img src={Img5} alt="shape" />
                                 </div>
-                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '-179px' }} >
+                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
                                     <img src={Img7} alt="Image" />
                                 </div>
                             </div>

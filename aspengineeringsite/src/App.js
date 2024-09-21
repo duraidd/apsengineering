@@ -16,9 +16,9 @@ function App() {
         <Route path="/windpower" element={<Windpower/>}/>
         <Route path="/civil" element={<Civil/>}/>
         <Route path="/electrical" element={<Electrical/>}/>
-        <Route path="/powerplant" element={<Powerplant/>}/>
+        <Route path="/solarenergy" element={<Powerplant/>}/>
         <Route path="/rooftop" element={<Rooftop/>}/>
-        <Route path="/solarenergy" element={<Solarenergy/>}/>        
+        <Route path="/powerplant" element={<Solarenergy/>}/>        
       </Routes>            
     </BrowserRouter>
   )

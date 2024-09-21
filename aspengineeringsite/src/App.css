@@ -5343,6 +5343,107 @@ span.fill {
   left: 73px;
 }
 
+
+.breatcome1-section {
+  background: url(../src/images/resource/breatcame_bg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0;
+}
+
+.breatcome1-content {
+  position: relative;
+}
+
+.breatcome1-title h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.bratcome1-text {
+  position: absolute;
+  right: 0;
+  bottom: -149px;
+  background: #f4fbff;
+  padding: 23px 35px;
+  border-radius: 5px 5px 0 0;
+}
+
+.bratcome1-text ul {
+  list-style: none;  
+  margin-left: -30px;
+  margin-bottom: -10px;
+}
+
+.bratcome1-text ul li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 27px;
+  color: #434141;
+  font-weight: 700;
+}
+
+.bratcome1-text ul li a {
+  display: inline-block;
+  font-size: 16px;
+  color: #434141;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  transition: .5s;
+}
+
+.bratcome1-text ul li a:hover {
+  color: #e63a27;
+}
+
+.bratcome1-text ul li a::before {
+  position: absolute;
+  content: "/";
+  left: 73px;
+}
+
+
+
+
+.breatcome2-section {
+  background: url(../src/images/resource/solarbanner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0;
+}
+
+
+
+.breatcome3-section {
+  background: url(../src/images/resource/power.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0;
+}
+
+
+.breatcome4-section {
+  background: url(../src/images/resource/elctbanner1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0;
+}
+
+
+.breatcome5-section {
+  background: url(../src/images/resource/civil.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0;
+}
+
+
+
+
 /*==================================================
 <-- Solar Panel  Blog  Css-->
 ===================================================*/
@@ -5869,6 +5970,7 @@ blockquote {
 
 .project-thumb img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .project-content {

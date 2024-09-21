@@ -196,7 +196,7 @@ function Rooftop() {
           <div>
             <div class="project-grid-box">
               <div class="project-thumb">
-                <img src={require("../images/project/project3.png")} alt="" />
+                <img src={require("../images/project/roogrid.jpg")} alt="" />
               </div>
               <div class="project-content">
                 <h4>Smarter Ways to Manage</h4>

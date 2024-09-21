@@ -87,6 +87,10 @@ function Home() {
     const [second, setsecond] = useState("");
 
 
+    const handleSend =()=>{
+        console.log("DATATATAT")
+    }
+
 
     useEffect(() => {
 
@@ -508,35 +512,35 @@ function Home() {
                             <div class="choose-contact-title">
                                 <h4>Make an Appointment</h4>
                             </div>
-                            <form action="https://formspree.io/f/myyleorq" method="POST" id="it-form">
+                            <form onSubmit={()=>{handleSend()}}  >
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-box">
-                                            <input type="text" name="name" placeholder="Full Name *" />
+                                            <input type="text"  placeholder="Full Name *" />
                                             <i class="bi bi-person"></i>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-box">
-                                            <input type="text" name="email" placeholder="Email Here *" />
+                                            <input type="text"  placeholder="Email Here *" />
                                             <i class="bi bi-envelope"></i>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-box">
-                                            <input type="text" name="subject" placeholder="Select Service *" />
+                                            <input type="text"  placeholder="Select Service *" />
                                             <i class="bi bi-pencil-square"></i>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-box">
-                                            <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Your Comment *"></textarea>
+                                            <textarea  cols="30" rows="10" placeholder="Your Comment *"></textarea>
                                             <i class="bi bi-chat-left-text-fill"></i>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-box-button">
-                                            <button type="Submit">Appontment Now <i class="bi bi-arrow-right"></i></button>
+                                            <button type="Submit">Appointment Now <i class="bi bi-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>

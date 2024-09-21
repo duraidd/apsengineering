@@ -129,7 +129,7 @@ function Powerplant() {
             </div>
 
 
-            <div class="service-details-section">
+           
                 <div style={{ padding: '0% 7%' }} >
                     <div class="row">
                         <div>
@@ -167,7 +167,7 @@ function Powerplant() {
 
                     </div>
                 </div>
-            </div>
+          
 
 
             <div class="project-grid-section">

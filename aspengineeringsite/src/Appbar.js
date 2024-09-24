@@ -200,7 +200,6 @@ function Appheader(props) {
     }
   }, [props.addData])
 
-  console.log("data", data);
 
   const drawer = (
     <Box sx={{ textAlign: "center" }}>

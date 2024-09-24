@@ -7,6 +7,11 @@ import { useLocation } from 'react-router-dom';
 import { ScrollToTop } from "react-simple-scroll-up";
 import { Box } from '@mui/material';
 import Scrollanimation from "react-animate-on-scroll";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
+
+
 
 const NextArrow = ({ onClick }) => {
     return (
@@ -87,8 +92,27 @@ function Home() {
     const [second, setsecond] = useState("");
 
 
-    const handleSend =()=>{
-        console.log("DATATATAT")
+    const [data, setdata] = useState({ name: "", email: "", service: "", comment: "" });
+
+
+    const handleSend = async (e) => {
+        e.preventDefault();
+
+        if (data.name && data.email && data.service && data.comment) {
+
+
+            const response = await axios.post("https://apsback.vercel.app/aps/sendeng", data);
+
+            toast.success(response.data.message, { autoClose: 3000 })
+
+            setTimeout(() => {
+                setdata({ name: "", email: "", service: "", comment: "" });
+                window.location.reload();
+            }, 1000)
+
+
+        }
+
     }
 
 
@@ -112,11 +136,14 @@ function Home() {
     }, [first])
 
 
-    console.log(first)
+
 
 
     return (
         <Box sx={{ overflow: 'hidden' }} >
+
+            <ToastContainer />
+
 
             <ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
 
@@ -128,21 +155,21 @@ function Home() {
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-12">
-                            <Scrollanimation animateIn="zoomIn" >
-                                <div class="slider-content">                              
+                                <Scrollanimation animateIn="zoomIn" >
+                                    <div class="slider-content">
                                         <h4> Our Solar Systems</h4>
                                         <h1>Energize Society By</h1>
                                         <h1>Reliadle Energy</h1>
                                         <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
-                                        <div style={{ display: 'flex', flexDirection: 'row',justifyContent:'center' }} >
+                                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
                                             <div class="solar-btn slider1">
                                                 <a>Our Service</a>
                                             </div>
                                             <div class="solar-btn slider2">
                                                 <a>More About!</a>
                                             </div>
-                                        </div>                                    
-                                </div>
+                                        </div>
+                                    </div>
                                 </Scrollanimation>
                             </div>
                         </div>
@@ -152,21 +179,21 @@ function Home() {
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-12">
-                            <Scrollanimation animateIn="zoomIn" >
-                                <div class="slider-content" >
-                                    <h4> Our Solar Systems</h4>
-                                    <h1>Energize Society By</h1>
-                                    <h1>Reliadle Energy</h1>
-                                    <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
-                                    <div style={{ display: 'flex', flexDirection: 'row' }} >
-                                        <div class="solar-btn slider1">
-                                            <a>Our Service </a>
-                                        </div>
-                                        <div class="solar-btn slider2">
-                                            <a>More About! </a>
+                                <Scrollanimation animateIn="zoomIn" >
+                                    <div class="slider-content" >
+                                        <h4> Our Solar Systems</h4>
+                                        <h1>Energize Society By</h1>
+                                        <h1>Reliadle Energy</h1>
+                                        <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
+                                        <div style={{ display: 'flex', flexDirection: 'row' }} >
+                                            <div class="solar-btn slider1">
+                                                <a>Our Service </a>
+                                            </div>
+                                            <div class="solar-btn slider2">
+                                                <a>More About! </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 </Scrollanimation>
                             </div>
                         </div>
@@ -181,96 +208,96 @@ function Home() {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
-                            
+
                             <div class="about-thumb">
-                            <Scrollanimation animateIn="fadeInLeft" >
-                                <img src={require("../src/images/about/about-thumb.jpg")} alt="" />
-                                <div class="about-counter">
-                                    <div class="about-counter-text">
-                                        <div class="about-numbar">
-                                            <h4 class="counter">29</h4>
-                                            <span>+</span>
-                                        </div>
-                                        <div class="about-text">
-                                            <h5>Years Exprience</h5>
+                                <Scrollanimation animateIn="fadeInLeft" >
+                                    <img src={require("../src/images/about/about-thumb.jpg")} alt="" />
+                                    <div class="about-counter">
+                                        <div class="about-counter-text">
+                                            <div class="about-numbar">
+                                                <h4 class="counter">29</h4>
+                                                <span>+</span>
+                                            </div>
+                                            <div class="about-text">
+                                                <h5>Years Exprience</h5>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 </Scrollanimation>
                                 <Scrollanimation animateIn="fadeInLeft">
-                                <div class="about-counter-two d-flex align-items-center">                                    
-                                    <div class="about-counter-img">
-                                        <img src={require("../src/images/about/about-shape.png")} alt="" />
+                                    <div class="about-counter-two d-flex align-items-center">
+                                        <div class="about-counter-img">
+                                            <img src={require("../src/images/about/about-shape.png")} alt="" />
+                                        </div>
+                                        <div class="about-number-two">
+                                            <h4 class="counter">2900</h4>
+                                            <span>+</span>
+                                            <h5>Satisfied Clients</h5>
+                                        </div>
+
                                     </div>
-                                    <div class="about-number-two">
-                                        <h4 class="counter">2900</h4>
-                                        <span>+</span>
-                                        <h5>Satisfied Clients</h5>
-                                    </div>
-                                    
-                                </div>
                                 </Scrollanimation>
                             </div>
-                            
+
                         </div>
 
-                        
-                        <div class="col-lg-6 col-md-12">
-                        <Scrollanimation animateIn="fadeInRight" >
-                            <div class="about-section-title">
-                                <div class="about-section-sub-title wow slideInUp">
-                                    <h4>Our Introduction</h4>
-                                </div>
-                                <div class="about-section-main-title">
-                                    <h2>We're Developing Future Solar Solutions </h2>
-                                </div>
-                            </div>
-                            <div class="tab">
-                                <ul class="tabs active">
-                                    <li class="current"><a style={{ color: 'white' }} >About Us</a></li>
-                                    <li class=""><a style={{ color: 'white' }}>Mission</a></li>
-                                    <li class=""><a style={{ color: 'white' }}>Vision</a></li>
-                                </ul>
 
-                                <div class="tab_content">
-                                    <div class="tabs_item" >
-                                        <div class="tabs-items-content">
-                                            <div class="about-content-discription wow slideInLeft">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaquecy epsa abillo inventore veritatis architecto beatae</p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                                    <div class="about-list wow slideInLeft">
-                                                        <ul>
-                                                            <li> Best Insurance Agency</li>
-                                                            <li> Trusted & Experience</li>
-                                                            <li> Key Managerial Persons</li>
-                                                        </ul>
-                                                    </div>
+                        <div class="col-lg-6 col-md-12">
+                            <Scrollanimation animateIn="fadeInRight" >
+                                <div class="about-section-title">
+                                    <div class="about-section-sub-title wow slideInUp">
+                                        <h4>Our Introduction</h4>
+                                    </div>
+                                    <div class="about-section-main-title">
+                                        <h2>We're Developing Future Solar Solutions </h2>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <ul class="tabs active">
+                                        <li class="current"><a style={{ color: 'white' }} >About Us</a></li>
+                                        <li class=""><a style={{ color: 'white' }}>Mission</a></li>
+                                        <li class=""><a style={{ color: 'white' }}>Vision</a></li>
+                                    </ul>
+
+                                    <div class="tab_content">
+                                        <div class="tabs_item" >
+                                            <div class="tabs-items-content">
+                                                <div class="about-content-discription wow slideInLeft">
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam aperiam, eaquecy epsa abillo inventore veritatis architecto beatae</p>
                                                 </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                                    <div class="about-list wow slideInRight">
-                                                        <ul>
-                                                            <li> Dedicated Support </li>
-                                                            <li> Board Composition</li>
-                                                            <li> Board Committees</li>
-                                                        </ul>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                        <div class="about-list wow slideInLeft">
+                                                            <ul>
+                                                                <li> Best Insurance Agency</li>
+                                                                <li> Trusted & Experience</li>
+                                                                <li> Key Managerial Persons</li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="solar-btn about">
-                                                        <a style={{ color: 'white' }}>Our Service</a>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                        <div class="about-list wow slideInRight">
+                                                            <ul>
+                                                                <li> Dedicated Support </li>
+                                                                <li> Board Composition</li>
+                                                                <li> Board Committees</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="solar-btn about">
+                                                            <a style={{ color: 'white' }}>Our Service</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
-                            </div>
                             </Scrollanimation>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -467,7 +494,7 @@ function Home() {
                 </div>
             </div>
 
-            <div  class="choose-us-section" style={{ textAlign: 'center' }}>
+            <div class="choose-us-section" style={{ textAlign: 'center' }}>
                 <div class="row choose">
                     <div class="col-lg-6 col-md-12" style={{ padding: '20px', flexWrap: 'wrap' }} >
                         <div class="section-title"  >
@@ -496,7 +523,7 @@ function Home() {
                             </div>
                             <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '20px' }} >
                                 <div class="solar-btn choose">
-                                    <a>Get A Quote</a>
+                                    <a style={{ color: 'white' }} >Get A Quote</a>
                                 </div>
                                 <div class="choose-us-icon">
                                     <i>✔</i>
@@ -507,40 +534,36 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div ref={contact}  class="col-lg-6 col-md-12">
+                    <div ref={contact} class="col-lg-6 col-md-12">
                         <div class="choose-contact-box">
                             <div class="choose-contact-title">
                                 <h4>Make an Appointment</h4>
                             </div>
-                            <form onSubmit={()=>{handleSend()}}  >
+                            <form onSubmit={(e) => handleSend(e)} >
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-box">
-                                            <input type="text"  placeholder="Full Name *" />
-                                            <i class="bi bi-person"></i>
+                                            <input type="text" required onChange={(e) => { setdata({ ...data, name: e.target.value }) }} value={data.name} placeholder="Full Name *" />
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-box">
-                                            <input type="text"  placeholder="Email Here *" />
-                                            <i class="bi bi-envelope"></i>
+                                            <input type="email" required onChange={(e) => { setdata({ ...data, email: e.target.value }) }} value={data.email} placeholder="Email Here *" />
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-box">
-                                            <input type="text"  placeholder="Select Service *" />
-                                            <i class="bi bi-pencil-square"></i>
+                                            <input type="text" required onChange={(e) => { setdata({ ...data, service: e.target.value }) }} value={data.service} placeholder="Select Service *" />
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-box">
-                                            <textarea  cols="30" rows="10" placeholder="Your Comment *"></textarea>
-                                            <i class="bi bi-chat-left-text-fill"></i>
+                                            <textarea cols="30" rows="10" required onChange={(e) => { setdata({ ...data, comment: e.target.value }) }} value={data.comment} placeholder="Your Comment *"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-box-button">
-                                            <button type="Submit">Appointment Now <i class="bi bi-arrow-right"></i></button>
+                                            <button type="Submit" >Appointment Now</button>
                                         </div>
                                     </div>
                                 </div>

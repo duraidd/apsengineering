@@ -2883,7 +2883,7 @@ a.handbag:before {
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 1px;
-  background: #e63a27;
+  background: #f12411;
   color: #fff;
   padding: 13px 25px;
   border-radius: 3px;
@@ -2925,11 +2925,11 @@ a.handbag:before {
 }
 
 .solar-btn.slider2 a:hover {
-  color: #ffffff;
+  color: #ffffff  !important;
 }
 
 .solar-btn.slider1 a:hover {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /* about btn */

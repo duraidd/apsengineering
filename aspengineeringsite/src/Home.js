@@ -467,7 +467,7 @@ function Home() {
                 </div>
             </div>
 
-            <div ref={contact} class="choose-us-section" style={{ textAlign: 'center' }}>
+            <div  class="choose-us-section" style={{ textAlign: 'center' }}>
                 <div class="row choose">
                     <div class="col-lg-6 col-md-12" style={{ padding: '20px', flexWrap: 'wrap' }} >
                         <div class="section-title"  >
@@ -507,7 +507,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+                    <div ref={contact}  class="col-lg-6 col-md-12">
                         <div class="choose-contact-box">
                             <div class="choose-contact-title">
                                 <h4>Make an Appointment</h4>

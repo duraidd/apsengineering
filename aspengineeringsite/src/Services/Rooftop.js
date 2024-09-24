@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react'
 import Appheader from '../Appbar'
 import Footer from '../Footer'
+import Scrollanimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
+import { ScrollToTop } from "react-simple-scroll-up";
+
 
 function Rooftop() {
 
@@ -14,6 +18,10 @@ function Rooftop() {
     <div style={{ overflow: 'hidden' }}>
       <Appheader first={"services"} />
 
+      <ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
+
+
+<Scrollanimation animateIn="fadeInLeft" >
       <div class="breatcome-section">
         <div class="container">
           <div class="row">
@@ -33,14 +41,16 @@ function Rooftop() {
           </div>
         </div>
       </div>
-
+      </Scrollanimation>
 
       <div class="service-details-section">
         <div style={{ padding: '0% 2%' }} >
           <div class="row">
             <div>
               <div class="service-details-thumb">
+                <Scrollanimation animateIn="zoomIn" >
                 <img src={require("../images/resource/roof1.jpg")} alt="service-details" />
+                </Scrollanimation>
               </div>
               <div class="service-details-title">
                 <h4>This service overview</h4>
@@ -53,12 +63,16 @@ function Rooftop() {
               <div class="row">
                 <div class="col-lg-6 col-md-6">
                   <div class="service-details-thumb-two">
+                    <Scrollanimation animateIn="fadeInLeft" >
                     <img src={require("../images/resource/service-details2.png")} alt="" />
+                    </Scrollanimation>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <div class="service-details-thumb-two">
+                    <Scrollanimation animateIn="fadeInRight" >
                     <img src={require("../images/resource/service-details3.png")} alt="" />
+                    </Scrollanimation>
                   </div>
                 </div>
               </div>
@@ -81,7 +95,9 @@ function Rooftop() {
           <div class="row">
             <div class="col-lg-6 col-md-6">
               <div class="projetct-details-image">
+                <Scrollanimation animateIn="fadeInLeft" >
                 <img src={require("../images/resource/project-details1.jpg")} alt="Service" />
+                </Scrollanimation>
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -158,7 +174,9 @@ function Rooftop() {
                 </div>
                 <div class="col-lg-4 col-md-12">
                   <div class="image">
+                    <Scrollanimation animateIn="fadeInRight" >
                     <img src={require("../images/resource/service3.png")} alt="Service" />
+                    </Scrollanimation>
                   </div>
                 </div>
               </div>
@@ -172,6 +190,7 @@ function Rooftop() {
 
         <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: "30px 10px", padding: "0 2% 0 2%" }} >
           <div>
+            <Scrollanimation animateIn="fadeInLeft" >
             <div class="project-grid-box">
               <div class="project-thumb">
                 <img src={require("../images/project/roof2.jpg")} alt="" />
@@ -181,8 +200,10 @@ function Rooftop() {
                 <span>ECO, Supply Chain</span>
               </div>
             </div>
+            </Scrollanimation>
           </div>
           <div>
+            <Scrollanimation animateIn="fadeInDown" >
             <div class="project-grid-box">
               <div class="project-thumb">
                 <img src={require("../images/project/project2.png")} alt="" />
@@ -192,8 +213,10 @@ function Rooftop() {
                 <span>Digital Product</span>
               </div>
             </div>
+            </Scrollanimation>
           </div>
           <div>
+            <Scrollanimation animateIn="fadeInRight" >
             <div class="project-grid-box">
               <div class="project-thumb">
                 <img src={require("../images/project/roogrid.jpg")} alt="" />
@@ -203,8 +226,10 @@ function Rooftop() {
                 <span>ECO, Supply Chain</span>
               </div>
             </div>
+            </Scrollanimation>
           </div>
           <div>
+            <Scrollanimation animateIn="fadeInLeft" >
             <div class="project-grid-box">
               <div class="project-thumb">
                 <img src={require("../images/project/project4.png")} alt="" />
@@ -214,8 +239,10 @@ function Rooftop() {
                 <span>Creative Work</span>
               </div>
             </div>
+            </Scrollanimation>
           </div>
           <div>
+            <Scrollanimation animateIn="fadeInUp" >
             <div class="project-grid-box">
               <div class="project-thumb">
                 <img src={require("../images/project/project5.png")} alt="" />
@@ -225,8 +252,10 @@ function Rooftop() {
                 <span>ECO, Supply Chain</span>
               </div>
             </div>
+            </Scrollanimation>
           </div>
           <div>
+            <Scrollanimation animateIn="fadeInRight" >
             <div class="project-grid-box">
               <div class="project-thumb">
                 <img src={require("../images/project/project6.png")} alt="" />
@@ -236,6 +265,7 @@ function Rooftop() {
                 <span>Finance, Supply</span>
               </div>
             </div>
+            </Scrollanimation>
           </div>
         </div>
 

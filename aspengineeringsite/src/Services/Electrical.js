@@ -1,47 +1,58 @@
 import React, { useEffect } from 'react'
 import Appheader from '../Appbar'
 import Footer from '../Footer'
+import Scrollanimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
+import { ScrollToTop } from "react-simple-scroll-up";
+
 
 
 function Electrical() {
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });    
-  }, [])
-  
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }, [])
 
 
-  return (
-    <div style={{ overflow: 'hidden' }}>
+
+    return (
+        <div style={{ overflow: 'hidden' }}>
+
+            <ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
+
+
             <Appheader first={"services"} />
 
-            <div class="breatcome4-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="breatcome-content">
-                                <div class="breatcome-title">
-                                    <h1>Electrical</h1>
-                                </div>
-                                <div class="bratcome-text">
-                                    <ul>
-                                        <li><a>Services</a></li>
-                                        <li>Electrical</li>
-                                    </ul>
+            <Scrollanimation animateIn="fadeInLeft" >
+                <div class="breatcome4-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="breatcome-content">
+                                    <div class="breatcome-title">
+                                        <h1>Electrical</h1>
+                                    </div>
+                                    <div class="bratcome-text">
+                                        <ul>
+                                            <li><a>Services</a></li>
+                                            <li>Electrical</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </Scrollanimation>
 
             <div class="project-details-section">
-                <div style={{padding:'5% 8%'}}>
+                <div style={{ padding: '5% 8%' }}>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
-                                <img src={require("../images/resource/elct1.jpg")} alt="Service" />
+                                <Scrollanimation animateIn="fadeInLeft" >
+                                    <img src={require("../images/resource/elct1.jpg")} alt="Service" />
+                                </Scrollanimation>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -118,7 +129,9 @@ function Electrical() {
                                 </div>
                                 <div class="col-lg-4 col-md-12">
                                     <div class="image">
-                                        <img src={require("../images/resource/elct2.jpg")} alt="Service" />
+                                        <Scrollanimation animateIn="fadeInRight" >
+                                            <img src={require("../images/resource/elct2.jpg")} alt="Service" />
+                                        </Scrollanimation>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +146,9 @@ function Electrical() {
                     <div class="row">
                         <div>
                             <div class="service-details-thumb">
-                                <img src={require("../images/resource/elct4.jpg")} alt="service-details" />
+                                <Scrollanimation animateIn="zoomIn" >
+                                    <img src={require("../images/resource/elct4.jpg")} alt="service-details" />
+                                </Scrollanimation>
                             </div>
                             <div class="service-details-title">
                                 <h4>This service overview</h4>
@@ -146,12 +161,17 @@ function Electrical() {
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="service-details-thumb-two">
-                                        <img src={require("../images/resource/elct.jpg")} alt="" />
+                                        <Scrollanimation animateIn="fadeInLeft" >
+                                            <img src={require("../images/resource/elct.jpg")} alt="" />
+                                        </Scrollanimation>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="service-details-thumb-two">
-                                        <img src={require("../images/resource/elct55.jpg")} alt="" />
+                                        <Scrollanimation animateIn="fadeInRight" >
+
+                                            <img src={require("../images/resource/elct55.jpg")} alt="" />
+                                        </Scrollanimation>
                                     </div>
                                 </div>
                             </div>
@@ -173,70 +193,82 @@ function Electrical() {
 
                 <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: "30px 10px", padding: "0 2% 0 2%" }} >
                     <div>
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/elct66.jpg")} alt="" />
+                        <Scrollanimation animateIn="fadeInLeft" >
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/elct66.jpg")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Chain Finance Program</h4>
+                                    <span>ECO, Supply Chain</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Chain Finance Program</h4>
-                                <span>ECO, Supply Chain</span>
-                            </div>
-                        </div>
+                        </Scrollanimation>
                     </div>
                     <div>
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/elct77.jpg")} alt="" />
+                        <Scrollanimation animateIn="fadeInDown" >
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/elct77.jpg")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>New Public Attitude Tracker</h4>
+                                    <span>Digital Product</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>New Public Attitude Tracker</h4>
-                                <span>Digital Product</span>
-                            </div>
-                        </div>
+                        </Scrollanimation>
                     </div>
                     <div>
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/elct88.png")} alt="" />
+                        <Scrollanimation animateIn="fadeInRight" >
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/elct88.png")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Smarter Ways to Manage</h4>
+                                    <span>ECO, Supply Chain</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Smarter Ways to Manage</h4>
-                                <span>ECO, Supply Chain</span>
-                            </div>
-                        </div>
+                        </Scrollanimation>
                     </div>
                     <div>
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/elct10.jpg")} alt="" />
+                        <Scrollanimation animateIn="fadeInLeft" >
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/elct10.jpg")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Task Managemen</h4>
+                                    <span>Creative Work</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Task Managemen</h4>
-                                <span>Creative Work</span>
-                            </div>
-                        </div>
+                        </Scrollanimation>
                     </div>
                     <div>
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/elct11.jpg")} alt="" />
+                        <Scrollanimation animateIn="fadeInUp" >
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/elct11.jpg")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Addressing Wind Energy</h4>
+                                    <span>ECO, Supply Chain</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Addressing Wind Energy</h4>
-                                <span>ECO, Supply Chain</span>
-                            </div>
-                        </div>
+                        </Scrollanimation>
                     </div>
                     <div>
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/elct60.png")} alt="" />
+                        <Scrollanimation animateIn="fadeInRight">
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/elct60.png")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Historical Book Design</h4>
+                                    <span>Finance, Supply</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Historical Book Design</h4>
-                                <span>Finance, Supply</span>
-                            </div>
-                        </div>
+                        </Scrollanimation>
                     </div>
                 </div>
 
@@ -245,7 +277,7 @@ function Electrical() {
             <Footer />
 
         </div>
-  )
+    )
 }
 
 export default Electrical

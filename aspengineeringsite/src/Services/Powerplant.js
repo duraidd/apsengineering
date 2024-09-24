@@ -2,47 +2,61 @@ import React, { useEffect } from 'react'
 import Appheader from '../Appbar'
 import '../App.css'
 import Footer from '../Footer'
+import Scrollanimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
+import { ScrollToTop } from "react-simple-scroll-up";
+
+
 
 
 function Powerplant() {
 
     useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });      
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }, [])
-    
+
 
 
     return (
         <div style={{ overflow: 'hidden' }}>
             <Appheader first={"services"} />
+            <ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
 
-            <div class="breatcome2-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="breatcome-content">
-                                <div class="breatcome-title">
-                                    <h1>Solar Energy</h1>
-                                </div>
-                                <div class="bratcome-text">
-                                    <ul>
-                                        <li><a>Services</a></li>
-                                        <li>Solar Energy</li>
-                                    </ul>
+
+            <Scrollanimation animateIn="fadeInLeft" >
+                <div class="breatcome2-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="breatcome-content">
+                                    <div class="breatcome-title">
+                                        <h1>Solar Energy</h1>
+                                    </div>
+                                    <div class="bratcome-text">
+                                        <ul>
+                                            <li><a>Services</a></li>
+                                            <li>Solar Energy</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </Scrollanimation>
+
+
 
 
             <div class="project-details-section">
-                <div style={{padding:'5% 8%'}}>
+                <div style={{ padding: '5% 8%' }}>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
-                                <img src={require("../images/resource/project-details1.jpg")} alt="Service" />
+                                <Scrollanimation animateIn="fadeInLeft" >
+                                    <img src={require("../images/resource/project-details1.jpg")} alt="Service" />
+                                </Scrollanimation>
+
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -119,7 +133,9 @@ function Powerplant() {
                                 </div>
                                 <div class="col-lg-4 col-md-12">
                                     <div class="image">
-                                        <img src={require("../images/resource/service3.png")} alt="Service" />
+                                        <Scrollanimation animateIn="fadeInRight" >
+                                            <img src={require("../images/resource/service3.png")} alt="Service" />
+                                        </Scrollanimation>
                                     </div>
                                 </div>
                             </div>
@@ -129,51 +145,57 @@ function Powerplant() {
             </div>
 
 
-           
-                <div style={{ padding: '0% 7%' }} >
-                    <div class="row">
-                        <div>
-                            <div class="service-details-thumb">
-                                <img src={require("../images/resource/service-details.png")} alt="service-details" />
-                            </div>
-                            <div class="service-details-title">
-                                <h4>This service overview</h4>
-                            </div>
-                            <div class="service-details-discription">
-                                <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna ali Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irures dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat nonm proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor.</p>
-                                <p>sit amet, consectetur adipisicielit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis fvUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="service-details-thumb-two">
-                                        <img src={require("../images/resource/service-details2.png")} alt="" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="service-details-thumb-two">
-                                        <img src={require("../images/resource/service-details3.png")} alt="" />
-                                    </div>
+            <div style={{ padding: '0% 7%' }} >
+                <div class="row">
+                    <div>
+                        <div class="service-details-thumb">
+                            <Scrollanimation animateIn="fadeInDown" >
+                            <img src={require("../images/resource/service-details.png")} alt="service-details" />
+                            </Scrollanimation>
+                        </div>
+                        <div class="service-details-title">
+                            <h4>This service overview</h4>
+                        </div>
+                        <div class="service-details-discription">
+                            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna ali Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irures dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat nonm proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor.</p>
+                            <p>sit amet, consectetur adipisicielit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis fvUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="service-details-thumb-two">
+                                    <Scrollanimation animateIn="fadeInLeft" >
+                                    <img src={require("../images/resource/service-details2.png")} alt="" />
+                                    </Scrollanimation>
                                 </div>
                             </div>
-                            <div class="service-details-title">
-                                <h4>This service overview Everyone</h4>
-                            </div>
-                            <div class="service-details-discription">
-                                <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna ali Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irures dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat nonm proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor.</p>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="service-details-thumb-two">
+                                <Scrollanimation animateIn="fadeInRight" >
+                                    <img src={require("../images/resource/service-details3.png")} alt="" />
+                                    </Scrollanimation>
+                                </div>
                             </div>
                         </div>
-
+                        <div class="service-details-title">
+                            <h4>This service overview Everyone</h4>
+                        </div>
+                        <div class="service-details-discription">
+                            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna ali Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irures dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat nonm proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor.</p>
+                        </div>
                     </div>
+
                 </div>
-          
+            </div>
+
 
 
             <div class="project-grid-section">
 
                 <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: "30px 10px", padding: "0 2% 0 2%" }} >
                     <div>
+                        <Scrollanimation animateIn="fadeInLeft" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/project1.png")} alt="" />
@@ -183,8 +205,10 @@ function Powerplant() {
                                 <span>ECO, Supply Chain</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                     <div>
+                        <Scrollanimation animateIn="fadeInDown" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/solar.png")} alt="" />
@@ -194,8 +218,12 @@ function Powerplant() {
                                 <span>Digital Product</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                     <div>
+                    <Scrollanimation animateIn="fadeInRight" >
+
+
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/solar1.jpg")} alt="" />
@@ -205,8 +233,11 @@ function Powerplant() {
                                 <span>ECO, Supply Chain</span>
                             </div>
                         </div>
+
+                        </Scrollanimation>
                     </div>
                     <div>
+                        <Scrollanimation animateIn="fadeInLeft" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/project4.png")} alt="" />
@@ -216,8 +247,10 @@ function Powerplant() {
                                 <span>Creative Work</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                     <div>
+                        <Scrollanimation animateIn="fadeInUp" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/project5.png")} alt="" />
@@ -227,8 +260,10 @@ function Powerplant() {
                                 <span>ECO, Supply Chain</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                     <div>
+                        <Scrollanimation animateIn="fadeInRight" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/project6.png")} alt="" />
@@ -238,6 +273,7 @@ function Powerplant() {
                                 <span>Finance, Supply</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                 </div>
 

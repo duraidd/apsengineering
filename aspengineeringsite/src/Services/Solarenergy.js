@@ -19,7 +19,11 @@ import Img14 from "../images/shape/dots_2.svg"
 import Img15 from "../images/theme-img/title_icon.svg"
 import Slider from 'react-slick'
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
-import { IconButton } from '@mui/material'
+import { IconButton } from '@mui/material';
+import Scrollanimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
+import { ScrollToTop } from "react-simple-scroll-up";
+
 
 
 const NextArrow = ({ onClick }) => {
@@ -75,34 +79,38 @@ function Solarenergy() {
     return (
         <>
             <Appheader first={"services"} />
+            <ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
 
-            <div class="breatcome3-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="breatcome-content">
-                                <div class="breatcome-title">
-                                    <h1>Power Plant Work</h1>
-                                </div>
-                                <div class="bratcome-text">
-                                    <ul>
-                                        <li><a>Services</a></li>
-                                        <li>Power Plant Work</li>
-                                    </ul>
+            <Scrollanimation animateIn="fadeInLeft" >
+                <div class="breatcome3-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="breatcome-content">
+                                    <div class="breatcome-title">
+                                        <h1>Power Plant Work</h1>
+                                    </div>
+                                    <div class="bratcome-text">
+                                        <ul>
+                                            <li><a>Services</a></li>
+                                            <li>Power Plant Work</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </Scrollanimation>
 
             <div class="project-details-section">
-                <div style={{padding:'5% 8%'}}>
+                <div style={{ padding: '5% 8%' }}>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
-                                <img src={require("../images/resource/pp1.jpg")} alt="Service" />
+                                <Scrollanimation animateIn="fadeInLeft" >
+                                    <img src={require("../images/resource/pp1.jpg")} alt="Service" />
+                                </Scrollanimation>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -179,7 +187,9 @@ function Solarenergy() {
                                 </div>
                                 <div class="col-lg-4 col-md-12">
                                     <div class="image">
-                                        <img src={require("../images/resource/pp2.jpg")} alt="Service" />
+                                        <Scrollanimation animateIn="fadeInRight" >
+                                            <img src={require("../images/resource/pp2.jpg")} alt="Service" />
+                                        </Scrollanimation>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +198,7 @@ function Solarenergy() {
                 </div>
             </div>
 
-        
+
             <section class="overflow-hidden">
                 <div class="container">
                     <div class="row">
@@ -205,9 +215,9 @@ function Solarenergy() {
                                 </ol>
                             </div>
                             <div class="row mt-40">
-                                <div class="col-lg-4 col-md-6 mb-30"><img class="rounded-10 w-100" src={require("../images/gallery/pixel_1.jpg")} alt="project" /></div>
-                                <div class="col-lg-4 col-md-6 mb-30"><img class="rounded-10 w-100" src={require("../images/gallery/pixel_2.jpg")} alt="project" /></div>
-                                <div class="col-lg-4 col-md-6 mb-30"><img class="rounded-10 w-76" src={require("../images/gallery/pixel_3.jpg")} alt="project" /></div>
+                                <div class="col-lg-4 col-md-6 mb-30"> <Scrollanimation animateIn="fadeInLeft" ><img class="rounded-10 w-100" src={require("../images/gallery/pixel_1.jpg")} alt="project" /></Scrollanimation></div>
+                                <div class="col-lg-4 col-md-6 mb-30"> <Scrollanimation animateIn="fadeInUp" ><img class="rounded-10 w-100" src={require("../images/gallery/pixel_2.jpg")} alt="project" /></Scrollanimation></div>
+                                <div class="col-lg-4 col-md-6 mb-30"> <Scrollanimation animateIn="fadeInRight"><img class="rounded-10 w-76" src={require("../images/gallery/pixel_3.jpg")} alt="project" /> </Scrollanimation> </div>
                             </div>
                             <h4 class="mt-10 mb-4">Final Result</h4>
                             <p class="mb-n2">Roof replacement is the process of removing the existing roof and installing a new one. It is necessary when a roof has reached the end of its lifespan, has sustained extensive damage, or cannot be effectively repaired.<br /><br />The

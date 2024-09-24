@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react'
 import Appheader from '../Appbar'
 import Footer from '../Footer'
+import Scrollanimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
+import { ScrollToTop } from "react-simple-scroll-up";
+
+
 
 function Windpower() {
 
@@ -13,8 +18,11 @@ function Windpower() {
 
   return (
     <div style={{ overflow: 'hidden' }}>
-            <Appheader first={"services"} />
+            <ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
 
+            <Appheader first={"services"} />
+            
+            <Scrollanimation animateIn="fadeInLeft" >
             <div class="breatcome1-section">
                 <div class="container">
                     <div class="row">
@@ -34,14 +42,16 @@ function Windpower() {
                     </div>
                 </div>
             </div>
-
+            </Scrollanimation>
 
             <div class="project-details-section">
                 <div style={{padding:'4% 8% 0% 8%'}}>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
+                                <Scrollanimation animateIn="fadeInLeft" >
                                 <img src={require("../images/resource/windpower.jpg")} alt="Service" />
+                                </Scrollanimation>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -118,7 +128,9 @@ function Windpower() {
                                 </div>
                                 <div class="col-lg-4 col-md-12">
                                     <div class="image">
+                                        <Scrollanimation animateIn="fadeInRight" >
                                         <img src={require("../images/resource/windpower1.jpg")} alt="Service" />
+                                        </Scrollanimation>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +145,9 @@ function Windpower() {
                     <div class="row">
                         <div>
                             <div class="service-details-thumb">
+                                <Scrollanimation animateIn="zoomIn" >
                                 <img src={require("../images/resource/windpower2.jpg")} alt="service-details" />
+                                </Scrollanimation>
                             </div>
                             <div class="service-details-title">
                                 <h4>This service overview</h4>
@@ -146,12 +160,16 @@ function Windpower() {
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="service-details-thumb-two">
+                                        <Scrollanimation animateIn="fadeInLeft" >
                                         <img src={require("../images/resource/windpower3.jpg")} alt="" />
+                                        </Scrollanimation>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="service-details-thumb-two">
+                                        <Scrollanimation animateIn="fadeInRight" >
                                         <img src={require("../images/resource/windpower4.jpg")} alt="" />
+                                        </Scrollanimation>
                                     </div>
                                 </div>
                             </div>
@@ -173,6 +191,7 @@ function Windpower() {
 
                 <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: "30px 10px", padding: "0 2% 0 2%" }} >
                     <div>
+                        <Scrollanimation animateIn="fadeInLeft" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/windpower5.jpg")} alt="" />
@@ -182,8 +201,10 @@ function Windpower() {
                                 <span>ECO, Supply Chain</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                     <div>
+                        <Scrollanimation animateIn="fadeInDown" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/windpower6.jpg")} alt="" />
@@ -193,8 +214,10 @@ function Windpower() {
                                 <span>Digital Product</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                     <div>
+                        <Scrollanimation animateIn="fadeInRight" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/project3.png")} alt="" />
@@ -204,8 +227,10 @@ function Windpower() {
                                 <span>ECO, Supply Chain</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                     <div>
+                        <Scrollanimation animateIn="fadeInLeft" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/windmillone.jpg")} alt="" />
@@ -215,8 +240,10 @@ function Windpower() {
                                 <span>Creative Work</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                     <div>
+                        <Scrollanimation animateIn="fadeInUp" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/windmill22.jpg")} alt="" />
@@ -226,8 +253,10 @@ function Windpower() {
                                 <span>ECO, Supply Chain</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                     <div>
+                        <Scrollanimation animateIn="fadeInRight" >
                         <div class="project-grid-box">
                             <div class="project-thumb">
                                 <img src={require("../images/project/windmill33.jpg")} alt="" />
@@ -237,6 +266,7 @@ function Windpower() {
                                 <span>Finance, Supply</span>
                             </div>
                         </div>
+                        </Scrollanimation>
                     </div>
                 </div>
 

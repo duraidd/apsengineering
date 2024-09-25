@@ -5308,8 +5308,6 @@ span.fill {
   background: #f4fbff;
   padding: 23px 35px;
   border-radius: 5px 5px 0 0;
-  width: 100%;
-  text-align: center;
 }
 
 .bratcome-text ul {
@@ -5344,7 +5342,7 @@ span.fill {
 .bratcome-text ul li a::before {
   position: absolute;
   content: "/";
-  left: 73px;
+  left: 70px;
 }
 
 

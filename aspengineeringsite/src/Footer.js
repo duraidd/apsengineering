@@ -14,7 +14,8 @@ const P = styled.p`
   
   font-family: 'Plus Jakarta Sans';
   margin-bottom: 20px;  
-  cursor: pointer;  
+  cursor: pointer; 
+  color:white; 
   
   &:hover {
     color: #e63a27;    
@@ -47,7 +48,7 @@ function Footer() {
                         </Box>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', color: '#ffffff' }} >
-                        <h2 style={{ marginBottom: "20px" }} >Industry Sector</h2>
+                        <h2 style={{ marginBottom: "20px" ,color:'white' }} >Industry Sector</h2>
                         <P>Contact us</P>
                         <P>How it Works</P>
                         <P>Office Create</P>
@@ -55,12 +56,12 @@ function Footer() {
                         <P>Terms & Services</P>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', color: '#ffffff', textAlign: 'justify' }} >
-                        <h2 style={{ marginBottom: "20px" }} >Get In Touch</h2>
-                        <p>23/C, First floor, <br/>
+                        <h2 style={{ marginBottom: "20px",color:'white' }} >Get In Touch</h2>
+                        <p style={{color:'white'}} >23/C, First floor, <br/>
                             Rajarajeshwari Nagar south Street<br/>
                             NGO B colony<br/>
                             Tirunelveli 627007<br /></p>
-                        <p>(+02) 574 - 328 - 30</p>
+                        <p style={{color:'white'}} >+91 73053 95976</p>
                         <P>example@gmail.com</P>
                     </Box>
                 </Box>

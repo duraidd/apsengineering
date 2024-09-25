@@ -389,8 +389,8 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="solar-btn contact-us" style={{cursor:'pointer'}} >
-                            <a onClick={()=>setfirst("contact")} >Contact Now</a>
+                        <div class="solar-btn contact-us" style={{ cursor: 'pointer' }} >
+                            <a onClick={() => setfirst("contact")} >Contact Now</a>
                         </div>
                     </div>
                 </div>
@@ -506,7 +506,10 @@ function Home() {
                             </div>
                         </div>
                         <div class="choose-us-discription">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <p style={{textAlign:'justify'}} >As one of the prominent engineering service providers in South India, we take pride in
+                                our rapid growth and diversified expertise. Our company stands at the forefront of
+                                innovation, offering a comprehensive range of services that span from cutting-edge
+                                infrastructure development to sustainable energy solutions. </p>
                         </div>
                         <div class="choose-us-content" >
                             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }} >

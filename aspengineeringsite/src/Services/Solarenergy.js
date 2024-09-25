@@ -91,10 +91,11 @@ function Solarenergy() {
                                         <h1>Power Plant Work</h1>
                                     </div>
                                     <div class="bratcome-text">
-                                        <ul>
+                                        {/* <ul>
                                             <li><a>Services</a></li>
                                             <li>Power Plant Work</li>
-                                        </ul>
+                                        </ul> */}
+                                       <div style={{textAlign:'center',fontWeight:'bold'}} >Services / Power Plant Work </div> 
                                     </div>
                                 </div>
                             </div>

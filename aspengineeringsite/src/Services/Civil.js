@@ -214,7 +214,7 @@ function Civil() {
                                         <h3 class="box-title">Solution for furniture assembly</h3>
                                     </div>
                                 </div>
-                                <div class="btn-group justify-content-center"><a href="about.html" class="th-btn style3">Discover More<i> 🡪</i></a>
+                                <div class="btn-group justify-content-center"><a class="th-btn style3">Discover More<i>🡪</i></a>
                                     <div class="call-btn">
                                         <div class="play-btn">
                                             <IconButton sx={{ backgroundColor: '#f47629' }} >
@@ -222,7 +222,7 @@ function Civil() {
                                             </IconButton></div>
                                         <div class="media-body">
                                             <p class="box-label">Call Us 24/7</p>
-                                            <h6 class="box-link text-white"><a href="tel:+0123456789">+0 (123) 456 789</a></h6>
+                                            <h6 class="box-link text-white"><a href="tel:+91 73053 95976">+91 73053 95976</a></h6>
                                         </div>
                                     </div>
                                 </div>

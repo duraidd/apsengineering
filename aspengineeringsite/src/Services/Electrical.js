@@ -65,10 +65,10 @@ function Electrical() {
                                         <h6>project name:</h6>
                                         <p>Electrical &amp; exterior work</p>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <h6>client:</h6>
                                         <p>theme pvt ltd</p>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <h6>category:</h6>
                                         <p>commercial</p>
@@ -79,7 +79,7 @@ function Electrical() {
                                     </li>
                                     <li>
                                         <h6>location:</h6>
-                                        <p>USA</p>
+                                        <p>Tirunelveli</p>
                                     </li>
                                     <li>
                                         <h6>share:</h6>
@@ -95,11 +95,9 @@ function Electrical() {
                         </div>
                         <div class="col-lg-12">
                             <div class="title">
-                                <h4>Description of Situation</h4>
+                                <h4>Electrical</h4>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nul pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-                                unde omnis iste natus e voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
+                            <p>As leaders in solar energy solutions, we provide a full spectrum of services to harness the abundant power of the sun. Our expertise covers everything from initial feasibility studies and system design to installation, monitoring, and maintenance of solar energy systems.</p>
                         </div>
                         <div class="col-lg-12 list-part">
                             <div class="row align-items-end">
@@ -107,23 +105,22 @@ function Electrical() {
                                     <div class="title">
                                         <h4>client's goal</h4>
                                     </div>
-                                    <p>The result of employees, over 115 detailers and engineers, all coming together to solve probl before they arise. the teamwork it demonstrates both internally and externally is outstandingThe result of employees, over 115 detailers
-                                        and engineers, all coming together to solve problem before they</p>
+                                    <p>We work closely with our clients to tailor solutions that maximize energy output while minimizing environmental impact. By leveraging the latest advancements in solar technology, we empower businesses and communities to transition to clean, renewable energy sources.</p>
                                     <ul class="desc-list">
                                         <li>
-                                            <p>The triple pressures of more regulations outstanding in the creation.</p>
+                                            <p>Design and install solar energy systems for residential, commercial, and industrial applications.</p>
                                         </li>
                                         <li>
-                                            <p>The legacy of the financial crisis has meant a few tricky years</p>
+                                            <p>Conduct feasibility studies and site assessments to determine the optimal placement and configuration of solar panels.</p>
                                         </li>
                                         <li>
-                                            <p>Now, the triple pressures of more regulations more regulations</p>
+                                            <p>Offer financing options and incentives to make solar energy more accessible and affordable for customers.</p>
                                         </li>
                                         <li>
-                                            <p>Outstanding in the creation he triple pressures of more regulations</p>
+                                            <p>Provide ongoing monitoring and maintenance services to optimize system performance and longevity.</p>
                                         </li>
                                         <li>
-                                            <p>The triple pressures of more regulations outstanding in the creation</p>
+                                            <p>Educate customers about the environmental and financial benefits of transitioning to solar energy.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -154,9 +151,8 @@ function Electrical() {
                                 <h4>This service overview</h4>
                             </div>
                             <div class="service-details-discription">
-                                <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna ali Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irures dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat nonm proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor.</p>
-                                <p>sit amet, consectetur adipisicielit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis fvUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                                <p>Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations.</p>
+                                <p>One of the properties of electricity is that it is very useful for energy transmission as well as for information transmission. These were also the first areas in which electrical engineering was developed. Today, electrical engineering has many subdisciplines, the most common of which are listed below. Although there are electrical engineers who focus exclusively on one of these subdisciplines, many deal with a combination of them</p>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
@@ -176,11 +172,10 @@ function Electrical() {
                                 </div>
                             </div>
                             <div class="service-details-title">
-                                <h4>This service overview Everyone</h4>
+                                <h4>Power and energy</h4>
                             </div>
                             <div class="service-details-discription">
-                                <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna ali Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irures dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat nonm proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor.</p>
+                                <p>In many regions of the world, governments maintain an electrical network called a power grid that connects a variety of generators together with users of their energy. Users purchase electrical energy from the grid, avoiding the costly exercise of having to generate their own. Power engineers may work on the design and maintenance of the power grid as well as the power systems that connect to it. Such systems are called on-grid power systems and may supply the grid with additional power, draw power from the grid, or do both. Power engineers may also work on systems that do not connect to the grid, called off-grid power systems, which in some cases are preferable to on-grid systems.</p>
                             </div>
                         </div>
 

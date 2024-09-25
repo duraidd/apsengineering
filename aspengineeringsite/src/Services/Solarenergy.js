@@ -123,10 +123,10 @@ function Solarenergy() {
                                         <h6>project name:</h6>
                                         <p>Power plant &amp;  design</p>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <h6>client:</h6>
                                         <p>theme pvt ltd</p>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <h6>category:</h6>
                                         <p>commercial</p>
@@ -137,7 +137,7 @@ function Solarenergy() {
                                     </li>
                                     <li>
                                         <h6>location:</h6>
-                                        <p>USA</p>
+                                        <p>Tirunelveli</p>
                                     </li>
                                     <li>
                                         <h6>share:</h6>
@@ -153,35 +153,33 @@ function Solarenergy() {
                         </div>
                         <div class="col-lg-12">
                             <div class="title">
-                                <h4>Description of Situation</h4>
+                                <h4>Power Plant Works</h4>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nul pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-                                unde omnis iste natus e voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
+                            <p>We are highly proficient in the services related to the construction, maintenance and
+                                optimization of power plant units such as thermal, hydroelectric and nuclear. Our team is
+                                very adept at handling all sorts of power plant projects, navigating the complexities, starting
+                                with feasibility tests, site selection, then designing and installation of equipment into
+                                seamlessly managing all the site operations.</p>
                         </div>
                         <div class="col-lg-12 list-part">
                             <div class="row align-items-end">
                                 <div class="col-lg-8 col-md-12">
                                     <div class="title">
-                                        <h4>client's goal</h4>
+                                        <h4>Turnkey Solutions for Power Plant Construction:</h4>
                                     </div>
-                                    <p>The result of employees, over 115 detailers and engineers, all coming together to solve probl before they arise. the teamwork it demonstrates both internally and externally is outstandingThe result of employees, over 115 detailers
-                                        and engineers, all coming together to solve problem before they</p>
+                                    <p>We are specialized in offering end-to
+                                        end solutions for power plant construction and giving guidance through each step of the
+                                        process from its conceptualization to execution. Whether it's designing the layout, selecting
+                                        equipment, or managing the construction phase, we ensure a seamless and efficient project
+                                        delivery.</p>
                                     <ul class="desc-list">
                                         <li>
-                                            <p>The triple pressures of more regulations outstanding in the creation.</p>
-                                        </li>
-                                        <li>
-                                            <p>The legacy of the financial crisis has meant a few tricky years</p>
-                                        </li>
-                                        <li>
-                                            <p>Now, the triple pressures of more regulations more regulations</p>
-                                        </li>
-                                        <li>
-                                            <p>Outstanding in the creation he triple pressures of more regulations</p>
-                                        </li>
-                                        <li>
-                                            <p>The triple pressures of more regulations outstanding in the creation</p>
+                                            <p> <span style={{ fontWeight: 'bold', color: 'black' }} >Excellence in Upgrades, Retrofits, Optimization, and Performance:</span> With an ultimate
+                                                focus on high quality outcome, we invest our effort in enhancing the performance of existing
+                                                power plants through upgrades, retrofits, and optimization techniques. Our team of plant
+                                                experts evaluates each plant's unique requirements and devises tailored solutions to
+                                                maximize its efficiency, reduce emissions, and prolong the operational lifespan of the
+                                                facility.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -203,15 +201,28 @@ function Solarenergy() {
                 <div class="container">
                     <div class="row">
                         <div class="col-12 mt-40">
-                            <h4 class="mt-10 mb-4">Project Challenges</h4>
-                            <p class="mb-30">Weather conditions: Weather conditions can significantly impact roofing projects, as high winds, heavy rain, or extreme temperatures can make it unsafe or impossible to work on the Roof. Contractors must carefully monitor weather conditions
-                                and adjust their schedule accordingly.</p>
+                            <h4 class="mt-10 mb-4">Comprehensive Maintenance and Support Services:</h4>
+                            <p class="mb-30">Ensuring uninterrupted power
+                                generation is our topmost priority. Hence, we offer a comprehensive range of maintenance
+                                services to make power plants run smoothly. From periodic inspections and maintenance
+                                regulations to emergency repairs and troubleshooting, our technical team provides round
+                                the-clock support to address any issues and minimize downtime. Additionally, we offer
+                                services such as spare parts management, technical training, and performance monitoring to
+                                enhance the overall reliability. <br /> <br /> We tailor solutions specifically to meet each of our client's particular needs and
+                                expectations. By leveraging our deep industrial knowledge and technical prowess, we
+                                customize strategies to optimize plant performance and maximize return on investment
+                                (ROI). Whether it's optimizing the already existing infrastructure or spearheading the
+                                development of new facilities, we are committed to deliver results that drive sustainable
+                                growth in the energy sector. </p>
                             <div class="project-listing">
                                 <ol>
-                                    <li>Access to the roof is critical to completing a roofing project, and some roofs can be challenging to reach, such as those with steep slopes or located at high elevations. Contractors must take appropriate safety measures to
-                                        ensure they can work safely and efficiently</li>
-                                    <li>Safety concerns: Roofing projects can be dangerous, and contractors must take appropriate safety measures to protect themselves, their workers, and anyone else in the vicinity. This includes using fall protection equipment,
-                                        ensuring proper ladder placement, and following all safety regulations</li>
+                                    <li> Whether it's designing the layout, selecting
+                                        equipment, or managing the construction phase, we ensure a seamless and efficient project
+                                        delivery.</li>
+                                    <li>Our team is
+                                        very adept at handling all sorts of power plant projects, navigating the complexities, starting
+                                        with feasibility tests, site selection, then designing and installation of equipment into
+                                        seamlessly managing all the site operations.</li>
                                 </ol>
                             </div>
                             <div class="row mt-40">
@@ -219,10 +230,9 @@ function Solarenergy() {
                                 <div class="col-lg-4 col-md-6 mb-30"> <Scrollanimation animateIn="fadeInUp" ><img class="rounded-10 w-100" src={require("../images/gallery/pixel_2.jpg")} alt="project" /></Scrollanimation></div>
                                 <div class="col-lg-4 col-md-6 mb-30"> <Scrollanimation animateIn="fadeInRight"><img class="rounded-10 w-76" src={require("../images/gallery/pixel_3.jpg")} alt="project" /> </Scrollanimation> </div>
                             </div>
-                            <h4 class="mt-10 mb-4">Final Result</h4>
-                            <p class="mb-n2">Roof replacement is the process of removing the existing roof and installing a new one. It is necessary when a roof has reached the end of its lifespan, has sustained extensive damage, or cannot be effectively repaired.<br /><br />The
-                                first step in the roofing replacement process is to have a professional roofing contractor inspect the roof to determine its condition and the extent of any damage. The contractor will then provide an estimate of the cost and time
-                                required for the replacement</p>
+                            <h4 class="mt-10 mb-4">Power Plant Works</h4>
+                            <p class="mb-n2">We are highly proficient in the services related to the construction, maintenance and
+                                optimization of power plant units such as thermal, hydroelectric and nuclear.</p>
                         </div>
 
                     </div>
@@ -250,11 +260,14 @@ function Solarenergy() {
                             </div>
                             <div class="col-xl-6 text-center text-xl-start mt-100">
                                 <div class="title-area mb-30 pe-xxl-5"><span class="sub-title shape-white"><img src={Img8} alt="shape" />About Us</span>
-                                    <h2 class="sec-title text-white">Committed to Give Quality House Repairing</h2>
+                                    <h2 class="sec-title text-white">Roof-top Grids for Residential Units</h2>
                                 </div>
-                                <p class="ff-title fs-18 fw-medium text-white">Commercial & Residential Clients across Sydney Repairs for their fast and reliable 24 hour Roofing Repair services.</p>
-                                <p class="mb-42 text-light">Welcome to Rakar renovation, we provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world
-                                    view of disruptive innovation via workplace diversity and empowerment.</p>
+                                <p class="ff-title fs-18 fw-medium text-white">We install solar panels on the building roof, connecting them to local power grid.
+                                    Electricity got from captured sunlight can be used to power all your appliances and
+                                    electronics within the building unit.</p>
+                                <p class="mb-42 text-light">Any surplus (additional) electricity will be automatically
+                                    fed back into the grid, allowing you to earn credits or reduce the EB bills through net
+                                    metering programs.</p>
                                 <div class="about-feature-wrap">
                                     <div class="about-feature">
                                         <div class="box-icon"><img src={Img11} alt="Icon" /></div>
@@ -262,10 +275,10 @@ function Solarenergy() {
                                     </div>
                                     <div class="about-feature">
                                         <div class="box-icon"><img src={Img12} alt="Icon" /></div>
-                                        <h3 class="box-title">Solution for furniture assembly</h3>
+                                        <h3 class="box-title">Solution for Reduce EB Bill</h3>
                                     </div>
                                 </div>
-                                <div class="btn-group justify-content-center"><a href="about.html" class="th-btn style3">Discover More<i> 🡪</i></a>
+                                <div class="btn-group justify-content-center"><a class="th-btn style3">Discover More<i> 🡪</i></a>
                                     <div class="call-btn">
                                         <div class="play-btn">
                                             <IconButton sx={{ backgroundColor: '#f47629' }} >
@@ -273,7 +286,7 @@ function Solarenergy() {
                                             </IconButton></div>
                                         <div class="media-body">
                                             <p class="box-label">Call Us 24/7</p>
-                                            <h6 class="box-link text-white"><a href="tel:+0123456789">+0 (123) 456 789</a></h6>
+                                            <h6 class="box-link text-white"><a href="tel:+91 73053 95976">+91 73053 95976</a></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -286,36 +299,7 @@ function Solarenergy() {
 
 
 
-            <section class="overflow-hidden space">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 mt-40">
-
-                            <h4 class="mt-10 mb-4">Project Challenges</h4>
-                            <p class="mb-30">Weather conditions: Weather conditions can significantly impact roofing projects, as high winds, heavy rain, or extreme temperatures can make it unsafe or impossible to work on the Roof. Contractors must carefully monitor weather conditions
-                                and adjust their schedule accordingly.</p>
-                            <div class="project-listing">
-                                <ol>
-                                    <li>Access to the roof is critical to completing a roofing project, and some roofs can be challenging to reach, such as those with steep slopes or located at high elevations. Contractors must take appropriate safety measures to
-                                        ensure they can work safely and efficiently</li>
-                                    <li>Safety concerns: Roofing projects can be dangerous, and contractors must take appropriate safety measures to protect themselves, their workers, and anyone else in the vicinity. This includes using fall protection equipment,
-                                        ensuring proper ladder placement, and following all safety regulations</li>
-                                </ol>
-                            </div>
-                            {/* <div class="row mt-40">
-                        <div class="col-lg-4 col-md-6 mb-30"><img class="rounded-10 w-100" src={require("../images/gallery/project_inner_3.jpg")} alt="project" /></div>
-                        <div class="col-lg-4 col-md-6 mb-30"><img class="rounded-10 w-100" src={require("../images/gallery/project_inner_4.jpg")} alt="project" /></div>
-                        <div class="col-lg-4 col-md-6 mb-30"><img class="rounded-10 w-100" src={require("../images/gallery/project_inner_5.jpg")} alt="project" /></div>
-                    </div> */}
-                            <h4 class="mt-10 mb-4">Final Result</h4>
-                            <p class="mb-n2">Roof replacement is the process of removing the existing roof and installing a new one. It is necessary when a roof has reached the end of its lifespan, has sustained extensive damage, or cannot be effectively repaired.<br /><br />The
-                                first step in the roofing replacement process is to have a professional roofing contractor inspect the roof to determine its condition and the extent of any damage. The contractor will then provide an estimate of the cost and time
-                                required for the replacement</p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+           
 
             <Footer />
         </>

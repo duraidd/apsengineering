@@ -69,10 +69,10 @@ function Powerplant() {
                                         <h6>project name:</h6>
                                         <p>solar &amp; exterior design</p>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <h6>client:</h6>
                                         <p>theme pvt ltd</p>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <h6>category:</h6>
                                         <p>commercial</p>
@@ -83,7 +83,7 @@ function Powerplant() {
                                     </li>
                                     <li>
                                         <h6>location:</h6>
-                                        <p>USA</p>
+                                        <p>Tirunelveli</p>
                                     </li>
                                     <li>
                                         <h6>share:</h6>
@@ -99,20 +99,32 @@ function Powerplant() {
                         </div>
                         <div class="col-lg-12">
                             <div class="title">
-                                <h4>Description of Situation</h4>
+                                <h4>Solar Energy Services</h4>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nul pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-                                unde omnis iste natus e voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
+                            <p>As pioneers in ‘Solar Power Solutions’, we offer quality installation and maintenance
+                                services that help the customers with an easy transition to the solar power system by
+                                utilising the abundant, inexhaustible energy from the sun. At APS Engineering Services, we
+                                incorporate the latest and reliable advancements in Solar Technology, thus empowering
+                                numerous households, businesses and communities to choose a budget and eco-friendly
+                                power source aka solar energy. <br /><br /> <span style={{ fontWeight: 'bold', color: 'black' }} >Highly Economical:</span> Consumption of solar power helps consumers to generate their own
+                                electricity, and reducing their electricity bills over time. Investing in solar power energy
+                                production is quite safe and secured. You don’t need to spend anything extra on land costs.
+                                You get to avail certain tax benefits. Most importantly, you need not worry about the
+                                maintenance cost as it is significantly low comparing to other energy consumptions. <br /><br /> <span style={{ fontWeight: 'bold', color: 'black' }} > Vast Resource: </span> India receives abundant sunlight throughout the year, making it an ideal
+                                location for solar power generation. With wide expanses of land available for solar
+                                installations, consumers have endless opportunity to harness this profitable energy
+                                resource.    </p>
                         </div>
                         <div class="col-lg-12 list-part">
                             <div class="row align-items-end">
                                 <div class="col-lg-8 col-md-12">
                                     <div class="title">
-                                        <h4>client's goal</h4>
+                                        <h4>Environmentally Friendly:</h4>
                                     </div>
-                                    <p>The result of employees, over 115 detailers and engineers, all coming together to solve probl before they arise. the teamwork it demonstrates both internally and externally is outstandingThe result of employees, over 115 detailers
-                                        and engineers, all coming together to solve problem before they</p>
+                                    <p>Solar power is a clean renewable energy source that generates
+                                        electricity without any emission of greenhouse gases or pollutants. Switching to solar power
+                                        help consumers to significantly lessen their carbon footprint and positively contribute to
+                                        mitigating climate change and increasing air pollution.</p>
                                     <ul class="desc-list">
                                         <li>
                                             <p>The triple pressures of more regulations outstanding in the creation.</p>
@@ -140,6 +152,24 @@ function Powerplant() {
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-12">
+                            <div class="title">
+                                <h4>Energy Independence:</h4>
+                            </div>
+                            <p>Solar power provides the users with high energy independence by
+                                allowing them to generate their own electricity on-site. This lowers their reliance on
+                                centralized power grids and fossil fuels, providing a more dependable source of energy. <br /><br /> <span style={{ fontWeight: 'bold', color: 'black' }} >Government Incentives:</span> The Indian government offers various incentives and subsidies to
+                                promote solar power adoption, such as subsidies on solar panel installations, tax incentives,
+                                and net metering policies. These incentives help make solar power more affordable and
+                                accessible to consumers. <br /><br /> <span style={{ fontWeight: 'bold', color: 'black' }} >Local Career Growth:</span> This promising industry has the potential to create millions of jobs
+                                across the value chain, including production, installation, maintenance, and operation of solar
+                                power systems in India. Usage of solar power resources contribute to our nation’s economic
+                                growth and offers employment opportunities, especially in rural areas. <br /> <br /> Overall, solar power consumption offers numerous benefits for consumers in India, including
+                                cost savings, environmental sustainability, energy independence, and economic growth. As
+                                the cost of solar technology continues to decline and government support for renewable
+                                energy increases, solar power is becoming an increasingly attractive option for consumers
+                                across the country. </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,29 +180,31 @@ function Powerplant() {
                     <div>
                         <div class="service-details-thumb">
                             <Scrollanimation animateIn="fadeInDown" >
-                            <img src={require("../images/resource/service-details.png")} alt="service-details" />
+                                <img src={require("../images/resource/service-details.png")} alt="service-details" />
                             </Scrollanimation>
                         </div>
                         <div class="service-details-title">
-                            <h4>This service overview</h4>
+                            <h4>Solar Power Plants of Any Scale</h4>
                         </div>
                         <div class="service-details-discription">
-                            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna ali Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irures dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat nonm proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor.</p>
-                            <p>sit amet, consectetur adipisicielit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis fvUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                            <p>We conduct initial feasibility studies and proper site assessment to determine the
+                                optimal placement and configuration of panels. We will help you with periodic monitoring and
+                                maintenance to optimize efficiency thus ensuring the system longevity. We also offer
+                                finance facilities and alternative options thus helping our clients to own a solar power plant
+                                and also making it even more accessible and affordable for everyone.</p>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="service-details-thumb-two">
                                     <Scrollanimation animateIn="fadeInLeft" >
-                                    <img src={require("../images/resource/service-details2.png")} alt="" />
+                                        <img src={require("../images/resource/service-details2.png")} alt="" />
                                     </Scrollanimation>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="service-details-thumb-two">
-                                <Scrollanimation animateIn="fadeInRight" >
-                                    <img src={require("../images/resource/service-details3.png")} alt="" />
+                                    <Scrollanimation animateIn="fadeInRight" >
+                                        <img src={require("../images/resource/service-details3.png")} alt="" />
                                     </Scrollanimation>
                                 </div>
                             </div>
@@ -181,8 +213,11 @@ function Powerplant() {
                             <h4>This service overview Everyone</h4>
                         </div>
                         <div class="service-details-discription">
-                            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna ali Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irures dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat nonm proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor.</p>
+                            <p>We conduct initial feasibility studies and proper site assessment to determine the
+                                optimal placement and configuration of panels. We will help you with periodic monitoring and
+                                maintenance to optimize efficiency thus ensuring the system longevity. We also offer
+                                finance facilities and alternative options thus helping our clients to own a solar power plant
+                                and also making it even more accessible and affordable for everyone.</p>
                         </div>
                     </div>
 
@@ -196,83 +231,83 @@ function Powerplant() {
                 <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: "30px 10px", padding: "0 2% 0 2%" }} >
                     <div>
                         <Scrollanimation animateIn="fadeInLeft" >
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/project1.png")} alt="" />
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/project1.png")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Chain Finance Program</h4>
+                                    <span>ECO, Supply Chain</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Chain Finance Program</h4>
-                                <span>ECO, Supply Chain</span>
-                            </div>
-                        </div>
                         </Scrollanimation>
                     </div>
                     <div>
                         <Scrollanimation animateIn="fadeInDown" >
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/solar.png")} alt="" />
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/solar.png")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>New Public Attitude Tracker</h4>
+                                    <span>Digital Product</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>New Public Attitude Tracker</h4>
-                                <span>Digital Product</span>
-                            </div>
-                        </div>
                         </Scrollanimation>
                     </div>
                     <div>
-                    <Scrollanimation animateIn="fadeInRight" >
+                        <Scrollanimation animateIn="fadeInRight" >
 
 
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/solar1.jpg")} alt="" />
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/solar1.jpg")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Smarter Ways to Manage</h4>
+                                    <span>ECO, Supply Chain</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Smarter Ways to Manage</h4>
-                                <span>ECO, Supply Chain</span>
-                            </div>
-                        </div>
 
                         </Scrollanimation>
                     </div>
                     <div>
                         <Scrollanimation animateIn="fadeInLeft" >
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/project4.png")} alt="" />
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/project4.png")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Task Managemen</h4>
+                                    <span>Creative Work</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Task Managemen</h4>
-                                <span>Creative Work</span>
-                            </div>
-                        </div>
                         </Scrollanimation>
                     </div>
                     <div>
                         <Scrollanimation animateIn="fadeInUp" >
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/project5.png")} alt="" />
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/project5.png")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Addressing Wind Energy</h4>
+                                    <span>ECO, Supply Chain</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Addressing Wind Energy</h4>
-                                <span>ECO, Supply Chain</span>
-                            </div>
-                        </div>
                         </Scrollanimation>
                     </div>
                     <div>
                         <Scrollanimation animateIn="fadeInRight" >
-                        <div class="project-grid-box">
-                            <div class="project-thumb">
-                                <img src={require("../images/project/project6.png")} alt="" />
+                            <div class="project-grid-box">
+                                <div class="project-thumb">
+                                    <img src={require("../images/project/project6.png")} alt="" />
+                                </div>
+                                <div class="project-content">
+                                    <h4>Historical Book Design</h4>
+                                    <span>Finance, Supply</span>
+                                </div>
                             </div>
-                            <div class="project-content">
-                                <h4>Historical Book Design</h4>
-                                <span>Finance, Supply</span>
-                            </div>
-                        </div>
                         </Scrollanimation>
                     </div>
                 </div>

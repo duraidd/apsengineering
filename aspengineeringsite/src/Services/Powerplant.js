@@ -33,10 +33,12 @@ function Powerplant() {
                                         <h1>Solar Energy</h1>
                                     </div>
                                     <div class="bratcome-text">
-                                        <ul>
+                                        {/* <ul>
                                             <li><a>Services</a></li>
                                             <li>Solar Energy</li>
-                                        </ul>
+                                        </ul> */}
+                                        <div style={{ textAlign: 'center', fontWeight: 'bold' }} >Services / Solar Energy </div>
+
                                     </div>
                                 </div>
                             </div>

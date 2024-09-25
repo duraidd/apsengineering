@@ -33,10 +33,12 @@ function Electrical() {
                                         <h1>Electrical</h1>
                                     </div>
                                     <div class="bratcome-text">
-                                        <ul>
+                                        {/* <ul>
                                             <li><a>Services</a></li>
                                             <li>Electrical</li>
-                                        </ul>
+                                        </ul> */}
+                                        <div style={{ textAlign: 'center', fontWeight: 'bold' }} >Services / Electrical </div>
+
                                     </div>
                                 </div>
                             </div>

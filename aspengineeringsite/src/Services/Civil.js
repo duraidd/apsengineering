@@ -91,10 +91,12 @@ function Civil() {
                                         <h1>Civil</h1>
                                     </div>
                                     <div class="bratcome-text">
-                                        <ul>
+                                        {/* <ul>
                                             <li><a>Services</a></li>
                                             <li>Civil</li>
-                                        </ul>
+                                        </ul> */}
+                                        <div style={{ textAlign: 'center', fontWeight: 'bold' }} >Services / Civil </div>
+
                                     </div>
                                 </div>
                             </div>

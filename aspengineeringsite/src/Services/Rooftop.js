@@ -21,26 +21,28 @@ function Rooftop() {
       <ScrollToTop bgColor="#ff0400" symbol="&#8593;" strokeFillColor="white" style={{ zIndex: 999 }} />
 
 
-<Scrollanimation animateIn="fadeInLeft" >
-      <div class="breatcome-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="breatcome-content">
-                <div class="breatcome-title">
-                  <h1>Rooftop Grid-tied</h1>
-                </div>
-                <div class="bratcome-text">
-                  <ul>
+      <Scrollanimation animateIn="fadeInLeft" >
+        <div class="breatcome-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="breatcome-content">
+                  <div class="breatcome-title">
+                    <h1>Rooftop Grid-tied</h1>
+                  </div>
+                  <div class="bratcome-text">
+                    {/* <ul>
                     <li><a>Services</a></li>
                     <li>Rooftop Grid-tied</li>
-                  </ul>
+                  </ul> */}
+                    <div style={{ textAlign: 'center', fontWeight: 'bold' }} >Services / Rooftop Grid-tied </div>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </Scrollanimation>
 
       <div class="service-details-section">
@@ -49,7 +51,7 @@ function Rooftop() {
             <div>
               <div class="service-details-thumb">
                 <Scrollanimation animateIn="zoomIn" >
-                <img src={require("../images/resource/roof1.jpg")} alt="service-details" />
+                  <img src={require("../images/resource/roof1.jpg")} alt="service-details" />
                 </Scrollanimation>
               </div>
               <div class="service-details-title">
@@ -64,14 +66,14 @@ function Rooftop() {
                 <div class="col-lg-6 col-md-6">
                   <div class="service-details-thumb-two">
                     <Scrollanimation animateIn="fadeInLeft" >
-                    <img src={require("../images/resource/service-details2.png")} alt="" />
+                      <img src={require("../images/resource/service-details2.png")} alt="" />
                     </Scrollanimation>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <div class="service-details-thumb-two">
                     <Scrollanimation animateIn="fadeInRight" >
-                    <img src={require("../images/resource/service-details3.png")} alt="" />
+                      <img src={require("../images/resource/service-details3.png")} alt="" />
                     </Scrollanimation>
                   </div>
                 </div>
@@ -96,7 +98,7 @@ function Rooftop() {
             <div class="col-lg-6 col-md-6">
               <div class="projetct-details-image">
                 <Scrollanimation animateIn="fadeInLeft" >
-                <img src={require("../images/resource/project-details1.jpg")} alt="Service" />
+                  <img src={require("../images/resource/project-details1.jpg")} alt="Service" />
                 </Scrollanimation>
               </div>
             </div>
@@ -175,7 +177,7 @@ function Rooftop() {
                 <div class="col-lg-4 col-md-12">
                   <div class="image">
                     <Scrollanimation animateIn="fadeInRight" >
-                    <img src={require("../images/resource/service3.png")} alt="Service" />
+                      <img src={require("../images/resource/service3.png")} alt="Service" />
                     </Scrollanimation>
                   </div>
                 </div>
@@ -191,80 +193,80 @@ function Rooftop() {
         <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: "30px 10px", padding: "0 2% 0 2%" }} >
           <div>
             <Scrollanimation animateIn="fadeInLeft" >
-            <div class="project-grid-box">
-              <div class="project-thumb">
-                <img src={require("../images/project/roof2.jpg")} alt="" />
+              <div class="project-grid-box">
+                <div class="project-thumb">
+                  <img src={require("../images/project/roof2.jpg")} alt="" />
+                </div>
+                <div class="project-content">
+                  <h4>Chain Finance Program</h4>
+                  <span>ECO, Supply Chain</span>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Chain Finance Program</h4>
-                <span>ECO, Supply Chain</span>
-              </div>
-            </div>
             </Scrollanimation>
           </div>
           <div>
             <Scrollanimation animateIn="fadeInDown" >
-            <div class="project-grid-box">
-              <div class="project-thumb">
-                <img src={require("../images/project/project2.png")} alt="" />
+              <div class="project-grid-box">
+                <div class="project-thumb">
+                  <img src={require("../images/project/project2.png")} alt="" />
+                </div>
+                <div class="project-content">
+                  <h4>New Public Attitude Tracker</h4>
+                  <span>Digital Product</span>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>New Public Attitude Tracker</h4>
-                <span>Digital Product</span>
-              </div>
-            </div>
             </Scrollanimation>
           </div>
           <div>
             <Scrollanimation animateIn="fadeInRight" >
-            <div class="project-grid-box">
-              <div class="project-thumb">
-                <img src={require("../images/project/roogrid.jpg")} alt="" />
+              <div class="project-grid-box">
+                <div class="project-thumb">
+                  <img src={require("../images/project/roogrid.jpg")} alt="" />
+                </div>
+                <div class="project-content">
+                  <h4>Smarter Ways to Manage</h4>
+                  <span>ECO, Supply Chain</span>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Smarter Ways to Manage</h4>
-                <span>ECO, Supply Chain</span>
-              </div>
-            </div>
             </Scrollanimation>
           </div>
           <div>
             <Scrollanimation animateIn="fadeInLeft" >
-            <div class="project-grid-box">
-              <div class="project-thumb">
-                <img src={require("../images/project/project4.png")} alt="" />
+              <div class="project-grid-box">
+                <div class="project-thumb">
+                  <img src={require("../images/project/project4.png")} alt="" />
+                </div>
+                <div class="project-content">
+                  <h4>Task Managemen</h4>
+                  <span>Creative Work</span>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Task Managemen</h4>
-                <span>Creative Work</span>
-              </div>
-            </div>
             </Scrollanimation>
           </div>
           <div>
             <Scrollanimation animateIn="fadeInUp" >
-            <div class="project-grid-box">
-              <div class="project-thumb">
-                <img src={require("../images/project/project5.png")} alt="" />
+              <div class="project-grid-box">
+                <div class="project-thumb">
+                  <img src={require("../images/project/project5.png")} alt="" />
+                </div>
+                <div class="project-content">
+                  <h4>Addressing Wind Energy</h4>
+                  <span>ECO, Supply Chain</span>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Addressing Wind Energy</h4>
-                <span>ECO, Supply Chain</span>
-              </div>
-            </div>
             </Scrollanimation>
           </div>
           <div>
             <Scrollanimation animateIn="fadeInRight" >
-            <div class="project-grid-box">
-              <div class="project-thumb">
-                <img src={require("../images/project/project6.png")} alt="" />
+              <div class="project-grid-box">
+                <div class="project-thumb">
+                  <img src={require("../images/project/project6.png")} alt="" />
+                </div>
+                <div class="project-content">
+                  <h4>Historical Book Design</h4>
+                  <span>Finance, Supply</span>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Historical Book Design</h4>
-                <span>Finance, Supply</span>
-              </div>
-            </div>
             </Scrollanimation>
           </div>
         </div>

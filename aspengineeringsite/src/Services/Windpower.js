@@ -32,10 +32,12 @@ function Windpower() {
                                         <h1>Wind Power</h1>
                                     </div>
                                     <div class="bratcome1-text">
-                                        <ul>
+                                        {/* <ul>
                                             <li><a>Services</a></li>
                                             <li>Wind Power</li>
-                                        </ul>
+                                        </ul> */}
+                                       <div style={{textAlign:'center',fontWeight:'bold'}} >Services / Wind Power </div> 
+
                                     </div>
                                 </div>
                             </div>

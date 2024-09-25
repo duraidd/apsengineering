@@ -2956,7 +2956,7 @@ a.handbag:before {
 }
 
 .solar-btn.contact-us a:hover {
-  color: #ffffff;
+  color: #ffffff !important; 
 }
 
 /* choose btn */
@@ -3694,6 +3694,7 @@ a.handbag:before {
   z-index: 1;
   /* margin: -130px 23px 33px; */
   margin-bottom: 100px;
+  background-size: cover;
 }
 
 
@@ -3716,6 +3717,7 @@ a.handbag:before {
   -ms-transition: all 900ms ease;
   -o-transition: all 900ms ease;
   z-index: -1;
+  background-size: cover;
 }
 
 .service-box:hover .service-content::before {
@@ -5310,7 +5312,7 @@ span.fill {
 
 .bratcome-text ul {
   list-style: none;  
-  margin-left: -30px;
+  margin-left: -10px;
   margin-bottom: -10px;
 }
 
@@ -5339,7 +5341,7 @@ span.fill {
 
 .bratcome-text ul li a::before {
   position: absolute;
-  content: "/ ";
+  content: "/";
   left: 73px;
 }
 

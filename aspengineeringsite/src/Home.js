@@ -389,8 +389,8 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="solar-btn contact-us" >
-                            <a>Contact Now</a>
+                        <div class="solar-btn contact-us" style={{cursor:'pointer'}} >
+                            <a onClick={()=>setfirst("contact")} >Contact Now</a>
                         </div>
                     </div>
                 </div>

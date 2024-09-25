@@ -203,8 +203,8 @@ function Appheader(props) {
 
   const drawer = (
     <Box sx={{ textAlign: "center" }}>
-      <Typography onClick={handleDrawerToggle} variant="h6" sx={{ my: 2 }}>
-        MUI
+      <Typography onClick={handleDrawerToggle} variant="h6" sx={{ my: 2  }}>
+        APS Engineering
       </Typography>
       <Divider />
 
@@ -217,7 +217,7 @@ function Appheader(props) {
             <ListItemButton
               sx={{
                 color: item.section === data ? "white" : "black",
-                textAlign: "center", backgroundColor: item.section === data ? "#2F4858" : ""
+                textAlign: "start", backgroundColor: item.section === data ? "#2F4858" : ""
               }}
               onClick={() => handleNav1(item)}
             >
@@ -236,7 +236,7 @@ function Appheader(props) {
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
-              <Typography sx={{ width: "33%", flexShrink: 0, color: 'black', flexGrow: 1 }}>
+              <Typography sx={{ width: "33%", flexShrink: 0, color: 'black', flexGrow: 1,textAlign:'start' }}>
                 {item.name}
               </Typography>
             </AccordionSummary>
@@ -245,7 +245,7 @@ function Appheader(props) {
                 <ListItem sx={{ backgroundColor: text.subMenuName === data ? "#2F4858" : "" }} >
                   <ListItemButton sx={{ textAlign: "center" }} >
                     <ListItemText
-                      sx={{ color: text.subMenuName === data ? "white" : "black" }}
+                      sx={{ color: text.subMenuName === data ? "white" : "black" ,textAlign:'start'}}
                       primary={text.subMenuName}
                       onClick={(e) => {
                         handleClickSubmenu(text, mySubMenu);

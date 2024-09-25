@@ -532,7 +532,7 @@ function Home() {
                                     <i>✔</i>
                                 </div>
                                 <div class="choose-us-phone">
-                                    <h5>Emergency Call <span>+123956(6565)556-02</span></h5>
+                                    <h5>Emergency Call <span>+91 73053 95976</span></h5>
                                 </div>
                             </div>
                         </div>

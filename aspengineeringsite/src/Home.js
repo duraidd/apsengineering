@@ -506,7 +506,7 @@ function Home() {
                             </div>
                         </div>
                         <div class="choose-us-discription">
-                            <p style={{textAlign:'justify'}} >As one of the prominent engineering service providers in South India, we take pride in
+                            <p style={{ textAlign: 'justify' }} >As one of the prominent engineering service providers in South India, we take pride in
                                 our rapid growth and diversified expertise. Our company stands at the forefront of
                                 innovation, offering a comprehensive range of services that span from cutting-edge
                                 infrastructure development to sustainable energy solutions. </p>
@@ -610,8 +610,8 @@ function Home() {
                                         <span>01</span>
                                     </div>
                                     <div class="protfolio-item-title">
-                                        <h3><a href="project-details.html">Business Task Management</a></h3>
-                                        <h3><a href="project-details.html">Dashboard Design</a></h3>
+                                        <h3><a >Business Task Management</a></h3>
+                                        <h3><a >Dashboard Design</a></h3>
                                     </div>
                                 </div>
                                 <div class="protfolio-itme-hover">
@@ -627,8 +627,8 @@ function Home() {
                                         <span>02</span>
                                     </div>
                                     <div class="protfolio-item-title">
-                                        <h3><a href="project-details.html">Business Task Management</a></h3>
-                                        <h3><a href="project-details.html">Dashboard Design</a></h3>
+                                        <h3><a>Business Task Management</a></h3>
+                                        <h3><a>Dashboard Design</a></h3>
                                     </div>
                                 </div>
                                 <div class="protfolio-itme-hover">
@@ -644,8 +644,8 @@ function Home() {
                                         <span>03</span>
                                     </div>
                                     <div class="protfolio-item-title">
-                                        <h3><a href="project-details.html">Business Task Management</a></h3>
-                                        <h3><a href="project-details.html">Dashboard Design</a></h3>
+                                        <h3><a>Business Task Management</a></h3>
+                                        <h3><a>Dashboard Design</a></h3>
                                     </div>
                                 </div>
                                 <div class="protfolio-itme-hover">

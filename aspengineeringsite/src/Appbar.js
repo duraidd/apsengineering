@@ -128,7 +128,7 @@ function Appheader(props) {
   const handleNav1 = (data) => {
 
 
-    console.log(data, "EEEE")
+   
 
     if (data.section === 'career') {
       setData(data.section);

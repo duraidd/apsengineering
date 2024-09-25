@@ -157,9 +157,9 @@ function Home() {
                             <div class="col-lg-12">
                                 <Scrollanimation animateIn="zoomIn" >
                                     <div class="slider-content">
-                                        <h4> Our Solar Systems</h4>
+                                        <h4> Our Systems</h4>
                                         <h1>Energize Society By</h1>
-                                        <h1>Reliadle Energy</h1>
+                                        <h1>APS Engineering</h1>
                                         <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
                                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
                                             <div class="solar-btn slider1">
@@ -181,9 +181,9 @@ function Home() {
                             <div class="col-lg-12">
                                 <Scrollanimation animateIn="zoomIn" >
                                     <div class="slider-content" >
-                                        <h4> Our Solar Systems</h4>
+                                        <h4> Our Systems</h4>
                                         <h1>Energize Society By</h1>
-                                        <h1>Reliadle Energy</h1>
+                                        <h1>Reliable Energy</h1>
                                         <p>The increase in extreme weather events and rising sea levels are unmistakable signs of climate change. Roughly 850 million people still live without access to electricity,</p>
                                         <div style={{ display: 'flex', flexDirection: 'row' }} >
                                             <div class="solar-btn slider1">

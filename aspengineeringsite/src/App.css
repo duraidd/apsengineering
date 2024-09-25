@@ -5342,7 +5342,16 @@ span.fill {
 .bratcome-text ul li a::before {
   position: absolute;
   content: "/";
-  left: 70px;
+  left: 73px;
+}
+
+
+@media (max-width:378px) {
+  .bratcome-text ul li a::before {
+  position: absolute;
+  content: "/";
+  left: 65px;
+}
 }
 
 

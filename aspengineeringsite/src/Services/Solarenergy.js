@@ -105,7 +105,7 @@ function Solarenergy() {
             </Scrollanimation>
 
             <div class="project-details-section">
-                <div style={{ padding: '5% 8%' }}>
+                <div style={{ padding: '5% 11%' }}>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="projetct-details-image">
@@ -201,7 +201,7 @@ function Solarenergy() {
             <section class="overflow-hidden">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 mt-40">
+                        <div class="col-12 mt-10">
                             <h4 class="mt-10 mb-4">Comprehensive Maintenance and Support Services:</h4>
                             <p class="mb-30">Ensuring uninterrupted power
                                 generation is our topmost priority. Hence, we offer a comprehensive range of maintenance

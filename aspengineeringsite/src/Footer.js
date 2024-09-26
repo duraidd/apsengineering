@@ -7,6 +7,7 @@ import Twit from '../src/images/Twitter.png'
 import Insta from '../src/images/Instagram.png'
 import LinkedIn from '../src/images/LinkedIn.png'
 import styled from 'styled-components';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 
 const P = styled.p`
@@ -27,8 +28,18 @@ const P = styled.p`
 
 function Footer(props) {
 
-    const handleAdddd = (data) => {        
-        props.dataAdd(data);
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleAdddd = (data) => {
+
+        if (location.pathname === "/") {
+            props.dataAdd(data);
+        } else {
+            navigate('/', { state: { section: data } });
+        }
+
     }
 
     return (
@@ -64,7 +75,7 @@ function Footer(props) {
                             NGO B colony<br />
                             Tirunelveli 627007<br /></p>
                         <p style={{ color: 'white' }} >+91 73053 95976</p>
-                        <P>example@gmail.com</P>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@apstechnologies.co.in" target='_blank' style={{ color: 'whitesmoke' }} >contact@apstechnologies.co.in</a>
                     </Box>
                 </Box>
                 <hr

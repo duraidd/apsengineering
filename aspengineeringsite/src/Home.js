@@ -10,6 +10,7 @@ import Scrollanimation from "react-animate-on-scroll";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 
 
@@ -45,6 +46,8 @@ function Home() {
 
     const [activeIndex, setActiveIndex] = useState(0);
 
+    const count = useMotionValue(0);
+    const rounded = useTransform(count, Math.round);
 
 
     useEffect(() => {
@@ -91,6 +94,8 @@ function Home() {
     const [first, setfirst] = useState(section);
     const [second, setsecond] = useState("");
 
+    const [scrollPosition, setScrollPosition] = useState(0);
+
 
     const [data, setdata] = useState({ name: "", email: "", service: "", comment: "" });
 
@@ -136,7 +141,28 @@ function Home() {
     }, [first])
 
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+        };
 
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+    useEffect(() => {
+
+        if (scrollPosition > 500) {
+            const animation = animate(count, 29, {
+                duration: 2
+            });
+        }
+
+    }, [scrollPosition]);
 
 
     return (
@@ -204,7 +230,7 @@ function Home() {
 
 
 
-            <div ref={about} class="about-section" style={{ textAlign: 'center' }}>
+            <div ref={about} class="about-section" style={{ textAlign: 'center' }} >
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
@@ -215,7 +241,8 @@ function Home() {
                                     <div class="about-counter">
                                         <div class="about-counter-text">
                                             <div class="about-numbar">
-                                                <h4 class="counter">29</h4>
+                                                {/* <h4 class="counter">29</h4> */}
+                                                <motion.h4>{rounded}</motion.h4>
                                                 <span>+</span>
                                             </div>
                                             <div class="about-text">

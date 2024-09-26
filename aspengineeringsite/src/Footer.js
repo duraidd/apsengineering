@@ -25,9 +25,11 @@ const P = styled.p`
 `;
 
 
-function Footer() {
+function Footer(props) {
 
-
+    const handleAdddd = (data) => {        
+        props.dataAdd(data);
+    }
 
     return (
         <Box sx={{ display: 'flex', flexDirection: 'row', backgroundColor: '#1c1632', justifyContent: 'center', alignItems: 'center', marginTop: '50px', '@media (max-width:1024px)': { padding: '5%', flexWrap: 'wrap' } }} >
@@ -48,20 +50,20 @@ function Footer() {
                         </Box>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', color: '#ffffff' }} >
-                        <h2 style={{ marginBottom: "20px" ,color:'white' }} >Industry Sector</h2>
-                        <P>Contact us</P>
+                        <h2 style={{ marginBottom: "20px", color: 'white' }} >Industry Sector</h2>
+                        <P onClick={() => { handleAdddd("contact") }} >Contact us</P>
                         <P>How it Works</P>
                         <P>Office Create</P>
                         <P>Residential ExPlore</P>
                         <P>Terms & Services</P>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', color: '#ffffff', textAlign: 'justify' }} >
-                        <h2 style={{ marginBottom: "20px",color:'white' }} >Get In Touch</h2>
-                        <p style={{color:'white'}} >23/C, First floor, <br/>
-                            Rajarajeshwari Nagar south Street<br/>
-                            NGO B colony<br/>
+                        <h2 style={{ marginBottom: "20px", color: 'white' }} >Get In Touch</h2>
+                        <p style={{ color: 'white' }} >23/C, First floor, <br />
+                            Rajarajeshwari Nagar south Street<br />
+                            NGO B colony<br />
                             Tirunelveli 627007<br /></p>
-                        <p style={{color:'white'}} >+91 73053 95976</p>
+                        <p style={{ color: 'white' }} >+91 73053 95976</p>
                         <P>example@gmail.com</P>
                     </Box>
                 </Box>

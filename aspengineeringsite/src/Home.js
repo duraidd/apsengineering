@@ -661,7 +661,7 @@ function Home() {
             </div>
 
 
-            <Footer />
+            <Footer dataAdd={setfirst} />
 
         </Box>
     );

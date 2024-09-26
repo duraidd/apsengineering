@@ -3195,7 +3195,7 @@ a.handbag:before {
 
 .about-counter-text {
   position: absolute;
-  padding: 28px 0 0;
+  padding: 28px 14px 0;
 }
 
 .about-counter-text::before {

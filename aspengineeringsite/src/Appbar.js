@@ -6,7 +6,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import Logoimg from '../src/images/logo.png'
+import Logoimg from '../src/images/apslogo.png'
 import { List } from "@mui/material";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -128,7 +128,7 @@ function Appheader(props) {
   const handleNav1 = (data) => {
 
 
-   
+
 
     if (data.section === 'career') {
       setData(data.section);
@@ -203,7 +203,7 @@ function Appheader(props) {
 
   const drawer = (
     <Box sx={{ textAlign: "center" }}>
-      <Typography onClick={handleDrawerToggle} variant="h6" sx={{ my: 2  }}>
+      <Typography onClick={handleDrawerToggle} variant="h6" sx={{ my: 2 }}>
         APS Engineering
       </Typography>
       <Divider />
@@ -236,7 +236,7 @@ function Appheader(props) {
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
-              <Typography sx={{ width: "33%", flexShrink: 0, color: 'black', flexGrow: 1,textAlign:'start' }}>
+              <Typography sx={{ width: "33%", flexShrink: 0, color: 'black', flexGrow: 1, textAlign: 'start' }}>
                 {item.name}
               </Typography>
             </AccordionSummary>
@@ -245,7 +245,7 @@ function Appheader(props) {
                 <ListItem sx={{ backgroundColor: text.subMenuName === data ? "#2F4858" : "" }} >
                   <ListItemButton sx={{ textAlign: "center" }} >
                     <ListItemText
-                      sx={{ color: text.subMenuName === data ? "white" : "black" ,textAlign:'start'}}
+                      sx={{ color: text.subMenuName === data ? "white" : "black", textAlign: 'start' }}
                       primary={text.subMenuName}
                       onClick={(e) => {
                         handleClickSubmenu(text, mySubMenu);
@@ -271,7 +271,7 @@ function Appheader(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ overflow:'hidden' }}  >
+    <Box sx={{ overflow: 'hidden' }}  >
       <CssBaseline />
       <AppBar
         component="nav"
@@ -280,7 +280,7 @@ function Appheader(props) {
         }}
 
         className="solar-header-section"
-        
+
       >
         <Toolbar  >
           <IconButton
@@ -288,7 +288,7 @@ function Appheader(props) {
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerToggle}
-            sx={{ ml: "auto",mr: 2, display: { sm: "none" } }}
+            sx={{ ml: "auto", mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon style={{ color: "#FF2A53" }} />
           </IconButton>
@@ -299,35 +299,35 @@ function Appheader(props) {
           >
             APS Technologies pvt ltd
           </Typography> */}
-          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "block" }, color: "black", paddingTop: '8px' ,cursor:'pointer' ,marginLeft:'10%' ,'@media (max-width:768px)':{marginLeft:'0%'} }}>
-            <img src={Logoimg} alt="logo"  onClick={()=>navigate('/')}  />
+          <Box sx={{ flex: 1, display: { xs: "none", sm: "block" }, color: "black", paddingTop: '8px', cursor: 'pointer', marginLeft: '10%', '@media (max-width:768px)': { marginLeft: '0%' } }}>
+            <img src={Logoimg} alt="logo" width={'245px'} height={'69px'} onClick={() => navigate('/')} />
           </Box>
 
           <Box sx={{ display: { xs: "none", sm: "contents" } }} >
             {navItems.map((item) => (
-              <Button  disableRipple
+              <Button disableRipple
                 key={item.name}
                 sx={{
                   color: item.section === props.first ? "#2F4858" : "black",
-                  fontSize: "1rem",                  
+                  fontSize: "1rem",
                   fontWeight: 700,
-                  border:'none',
-                  outline:'none', 
+                  border: 'none',
+                  outline: 'none',
                   '&:focus': {
                     outline: 'none',
                     boxShadow: 'none',
-                  },                                                     
-                  fontFamily:"Plus Jakarta Sans",
+                  },
+                  fontFamily: "Plus Jakarta Sans",
                   textDecoration: item.section === props.first ? "underline" : "",
-                  textDecorationThickness:'5px',
-                  textDecorationColor:"#2F4858",
-                  "&:hover": { textDecoration: "underline",textDecorationThickness:'5px',backgroundColor:'white'},
+                  textDecorationThickness: '5px',
+                  textDecorationColor: "#2F4858",
+                  "&:hover": { textDecoration: "underline", textDecorationThickness: '5px', backgroundColor: 'white' },
                   marginRight: { sm: 0, lg: 10 }
                 }}
                 onClick={() => handleNav(item)}
                 onMouseOver={(e) => handleShow(e, item)}
-              >                
-                {item.name === "Services" ?   item.name+"⮟" : item.name}
+              >
+                {item.name === "Services" ? item.name + "⮟" : item.name}
               </Button>
             ))}
 
@@ -374,7 +374,7 @@ function Appheader(props) {
                     },
                     transition: '0.3s',
                     borderRadius: '5px',
-                    fontFamily:'Plus Jakarta Sans'
+                    fontFamily: 'Plus Jakarta Sans'
                   }}
                   onClick={(e) => { handleClickSubmenu1(text, mySubMenu); }}
                 >
@@ -386,7 +386,7 @@ function Appheader(props) {
           </Box>
         </Toolbar>
       </AppBar>
-      <nav>        
+      <nav>
         <Drawer
           container={container}
           variant="temporary"
@@ -400,7 +400,7 @@ function Appheader(props) {
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
-              width: drawerWidth              
+              width: drawerWidth
             },
           }}
         >

@@ -299,8 +299,8 @@ function Appheader(props) {
           >
             APS Technologies pvt ltd
           </Typography> */}
-          <Box sx={{ flex: 1, display: { xs: "none", sm: "block" }, color: "black", paddingTop: '8px', cursor: 'pointer', marginLeft: '10%', '@media (max-width:768px)': { marginLeft: '0%' } }}>
-            <img src={Logoimg} alt="logo" width={'245px'} height={'69px'} onClick={() => navigate('/')} />
+          <Box sx={{ flex: 1, display: { xs: "none", sm: "block" }, color: "black", paddingTop: '8px',paddingBottom:'8px', cursor: 'pointer', marginLeft: '10%', '@media (max-width:768px)': { marginLeft: '0%' } }}>
+            <img src={Logoimg} alt="logo" width={'250px'} height={'69px'} onClick={() => navigate('/')} />
           </Box>
 
           <Box sx={{ display: { xs: "none", sm: "contents" } }} >
